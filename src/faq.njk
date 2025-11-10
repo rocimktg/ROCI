@@ -1,0 +1,106 @@
+---
+permalink: faq.html
+title: Frequently Asked Questions
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title }} | Rocinante Marketing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  {% include "nav.njk" %}
+
+  <main id="main">
+    <section id="faq-hero" class="hero section">
+      <div class="container stack center">
+        <h1>FAQs</h1>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-heading">
+      <div class="container stack">
+        <span class="eyebrow">Questions &amp; Answers</span>
+        <h2 id="faq-heading">Top Questions From Small Business Owners</h2>
+        <div class="faq-list">
+          {% set faqs = [
+            {
+              question: "How long does a typical project take?",
+              answer: "Most brochure-style sites launch in 4–6 weeks. More complex builds with custom integrations can run 8–10 weeks. We map timelines in the proposal so you know what to expect."
+            },
+            {
+              question: "Do you really hand-code every website?",
+              answer: "Yes. We start with wireframes, move into design, then code everything in HTML/CSS/JS. No WordPress, no page builders. It keeps your site lean, fast, and secure."
+            },
+            {
+              question: "What’s included in the $175/mo plan?",
+              answer: "You get design, development, hosting, SSL, unlimited edits, analytics setup, and proactive maintenance. It’s the easiest way to keep your site running without hiring in-house."
+            },
+            {
+              question: "Can I cancel the monthly plan?",
+              answer: "There’s a 12-month agreement to cover the initial build. After that, you can move to a maintenance-only plan, continue as-is, or switch to an on-demand engagement."
+            },
+            {
+              question: "What if I already have a website?",
+              answer: "We’ll audit what you’ve got, figure out what’s working, and rebuild the rest from the ground up. Most clients see improved load times, better conversions, and happier visitors."
+            },
+            {
+              question: "Do you offer SEO or Google Ads support?",
+              answer: "Absolutely. We bake in on-page SEO during development and can manage ongoing SEO + Google Ads campaigns so your site actually gets traffic."
+            },
+            {
+              question: "Will I be able to make updates after launch?",
+              answer: "Yes—send edits over and we take care of them. If you want to handle updates yourself, we’ll provide documentation or lightweight CMS options to keep things moving."
+            },
+            {
+              question: "How many pages are included?",
+              answer: "Most starter sites include up to five fully designed pages. Need more? We’ll scope additional pages or landing pages as part of the proposal so pricing stays transparent."
+            },
+            {
+              question: "What content do I need to provide?",
+              answer: "We can work from your existing copy or collaborate on messaging. We’ll guide you on photography, brand voice, and key selling points to make sure every page resonates."
+            },
+            {
+              question: "Do you work with businesses outside Dallas?",
+              answer: "Yes—we partner with clients across the U.S. and Canada. Everything can be handled via Zoom, Loom, and shared project spaces so distance is never a blocker."
+            }
+          ] %}
+
+          {% for item in faqs %}
+          <details class="faq-item">
+            <summary>{{ item.question }}</summary>
+            <div class="faq-answer">
+              <p>{{ item.answer }}</p>
+            </div>
+          </details>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  {% include "footer.njk" %}
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    // Optional: allow only one FAQ open at a time for a cleaner experience.
+    document.querySelectorAll('.faq-item').forEach((item) => {
+      item.addEventListener('toggle', () => {
+        if (item.open) {
+          document.querySelectorAll('.faq-item').forEach((other) => {
+            if (other !== item) {
+              other.open = false;
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

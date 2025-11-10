@@ -1,0 +1,81 @@
+---
+permalink: pricing.html
+title: Pricing
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title }} | Rocinante Marketing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  {% include "nav.njk" %}
+
+  <main id="main">
+    <section id="pricing-hero" class="hero section">
+      <div class="container stack center">
+        <h1>Pricing</h1>
+      </div>
+    </section>
+
+    <section class="section pricing" aria-labelledby="pricing-options">
+      <div class="container stack">
+        <h2 id="pricing-options">Flexible Plans for Every Stage of Growth</h2>
+        <p>Whether you prefer to own your site outright or grow with a simple monthly plan, Rocinante offers flexible, transparent pricing built for real businesses.</p>
+        <div class="plans">
+          <article class="plan">
+            <div class="plan-header">
+              <span class="plan-title">MONTHLY</span>
+              <span class="most">Most Popular</span>
+            </div>
+            <p>Best for long-term growth.</p>
+            <ul class="feature-list">
+              <li><span class="tick"><i data-lucide="check"></i></span><span>Custom Design &amp; Development</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>Hosting Included</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>Unlimited Edits</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>$100 per page after first 5</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>$250 Blog Setup</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>24/7 Priority Support</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>Lifetime Updates</span></li>
+            </ul>
+            <div class="price-lg">$175<span>/mo</span></div>
+            <p>All-inclusive, no surprises &mdash; just growth and support, month after month.</p>
+            <a class="btn" href="#contact">Start Monthly Plan</a>
+          </article>
+
+          <article class="plan">
+            <div class="plan-header">
+              <span class="plan-title">LUMP SUM</span>
+            </div>
+            <p>Best for one-time builds.</p>
+            <ul class="feature-list">
+              <li><span class="tick"><i data-lucide="check"></i></span><span>Custom Design &amp; Development</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>$25/mo Managed Hosting</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>$100 per page after first 5</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>$250 Blog Setup</span></li>
+              <li><span class="tick"><i data-lucide="check"></i></span><span>$50/mo Unlimited Edits</span></li>
+              <li class="feature-unavailable"><span class="tick"><i data-lucide="x"></i></span><span>24/7 Support</span></li>
+              <li class="feature-unavailable"><span class="tick"><i data-lucide="x"></i></span><span>Lifetime Updates</span></li>
+            </ul>
+            <div class="price-lg">$3,800<span> one-time</span></div>
+            <p>Ideal for businesses who prefer full ownership and minimal ongoing costs.</p>
+            <a class="btn" href="#contact">Start One-Time Build</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  {% include "footer.njk" %}
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿---
+permalink: webdesign.html
+title: Web Design Services
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title }} | Rocinante Marketing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  {% include "nav.njk" %}
+
+  <main id="main">
+    <section id="web-design-hero" class="hero section">
+      <div class="container stack center">
+        <h1>Web Design</h1>
+      </div>
+    </section>
+
+      <!-- WHAT WE DO -->
+  <section id="whatwedo" class="whatwedo section" aria-labelledby="whatwedo-heading">
+    <div class="container stack">
+      <span class="eyebrow">What we do</span>
+      <h2 id="whatwedo-heading" class="h2">Drive Leads with High-Performing Websites</h2>
+      <p class="intro">Your website should do more than look good — it should bring in business. We design custom-coded sites that are fast, trusted, visible, and effortless to manage, built from the ground up to help your brand stand out and convert visitors into customers.</p>
+      <div class="grid-6">
+        <article class="card stack">
+          <div class="svc-icon"><i data-lucide="target"></i></div>
+          <h3 class="h3">Lead-Focused Design</h3>
+          <p>Every layout is built to convert &mdash; guiding visitors to take action with clear messaging, simple navigation, and irresistible calls-to-action.</p>
+        </article>
+        <article class="card stack">
+          <div class="svc-icon"><i data-lucide="shield-check"></i></div>
+          <h3 class="h3">Built for Trust</h3>
+          <p>Modern design, clean structure, and authentic visuals instantly build credibility &mdash; giving your business the professional presence customers trust.</p>
+        </article>
+        <article class="card stack">
+          <div class="svc-icon"><i data-lucide="sparkles"></i></div>
+          <h3 class="h3">Low-Maintenance</h3>
+          <p>Our code-based sites run smoothly without constant updates or plugin issues &mdash; so you can focus on growth, not upkeep.</p>
+        </article>
+        <article class="card stack">
+          <div class="svc-icon"><i data-lucide="map-pin"></i></div>
+          <h3 class="h3">Local Google Visibility</h3>
+          <p>We optimize every page for local search &mdash; helping nearby customers find your business quickly through Google Maps and organic results.</p>
+        </article>
+        <article class="card stack">
+          <div class="svc-icon"><i data-lucide="palette"></i></div>
+          <h3 class="h3">Custom-Fit to Your Brand</h3>
+          <p>No templates or shortcuts &mdash; every site is uniquely designed to reflect your voice, values, and visual identity with precision.</p>
+        </article>
+        <article class="card stack">
+          <div class="svc-icon"><i data-lucide="line-chart"></i></div>
+          <h3 class="h3">Measurable Results</h3>
+          <p>Track traffic, conversions, and performance in real time &mdash; clear insights that show your website's impact and return on investment.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  {% include "footer.njk" %}
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+---
+permalink: contact.html
+title: Contact
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title }} | Rocinante Marketing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  {% include "nav.njk" %}
+
+  <main id="main">
+    <section id="contact-hero" class="hero section">
+      <div class="container stack center">
+        <h1>Let's Work Together</h1>
+      </div>
+    </section>
+
+    {% include "contact-cta.njk" %}
+  </main>
+
+  {% include "footer.njk" %}
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
