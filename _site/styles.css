@@ -1,4 +1,4 @@
-/* =============================
+﻿/* =============================
    TOKENS & RESET
    - Design tokens, base reset, global primitives
 ============================= */
@@ -28,8 +28,9 @@
   --space-7: 64px;
 
   /* Brand colors */
-  --brand: #193f3a; /* deep green */
-  --bg: #f0eee9;    /* warm tan */
+  --roci-blue: #031b2f; /* ROCI BLUE */
+  --roci-cream: #f0eee9; /* ROCI CREAM */
+  --primary-strong: #047062;
 
   /* Surfaces & text */
   --surface: #ffffff;
@@ -61,7 +62,8 @@
 }
 
 /* Typography */
-h1,h2,h3,h4,h5,h6,.logo,.nav a{ font-family:'Roboto',sans-serif; color:var(--ink); }
+h1,h2{ font-family:'Ramillas',serif; color:var(--ink); }
+h3,h4,h5,h6,.logo,.nav a{ font-family:'Roboto',sans-serif; color:var(--ink); }
 h1{
   font-weight:700; letter-spacing:.01em; line-height:1.05;
   /* Big hero like your reference */
@@ -73,7 +75,7 @@ h2{
   font-weight:700;
   font-size:clamp(1.8rem,3.2vw,3rem);
   margin:0 0 var(--space-3);
-  color: var(--brand);
+  color: var(--roci-blue);
   font-family: Ramillas;
 }
 
@@ -101,7 +103,7 @@ body {
   color: var(--ink);
 
   /* visual */
-  background: var(--bg);
+  background: var(--roci-cream);
 }
 
 /* =============================
@@ -162,7 +164,7 @@ body {
   flex: 0 1 calc((100% - (var(--cols) - 1) * var(--space-4)) / var(--cols));
 }
 
-/* Default (mobile-first) â€“ stack */
+/* Default (mobile-first) Ã¢â‚¬â€œ stack */
 .row.cols-2 { --cols: 1; }
 .row.cols-3 { --cols: 1; }
 .row.cols-4 { --cols: 1; }
@@ -281,7 +283,7 @@ body {
   box-shadow: var(--shadow);
 }
 .plan-header { display: flex; align-items: center; justify-content: space-between; }
-.plan-title { font-weight: 700; font-size: var(--step-2); color: var(--brand)}
+.plan-title { font-weight: 700; font-size: var(--step-2); color: var(--roci-blue)}
 .most {
   font-size: var(--step--1); font-weight: 700;
   background: #f7f7f7; border: 1px solid var(--line);
@@ -293,9 +295,9 @@ body {
   color: var(--muted);
   margin-top: var(--space-3);
   padding: var(--space-1) var(--space-2);
-  border-top: 1px solid color-mix(in srgb, var(--brand) 25%, #fff 75%);
-  border-bottom: 1px solid color-mix(in srgb, var(--brand) 25%, #fff 75%);
-  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--roci-blue) 25%, #fff 75%);
+  border-bottom: 1px solid color-mix(in srgb, var(--roci-blue) 25%, #fff 75%);
+  background: color-mix(in srgb, var(--roci-blue) 12%, transparent);
   border-radius: var(--radius);
   align-self: stretch;
   text-align: center;
@@ -306,7 +308,7 @@ body {
 .tick {
   width: 18px; height: 18px;
   display: flex; align-items: center; justify-content: center;
-  color: var(--brand); font-size: 10px;
+  color: var(--roci-blue); font-size: 10px;
   border: 1px solid var(--line); border-radius: 50%;
   margin-top: 4px;
 }
@@ -336,20 +338,30 @@ body {
   padding: 25px;
   text-align: left;            /* ensure text left inside cards */
 }
+.grid-6 .card:hover,
+.grid-6 .card:focus-within {
+  background-color: var(--roci-blue);
+}
 
 /* Fix the selector so it only targets h3 and p inside cards */
 .grid-6 .card h3,
 .grid-6 .card p {
-  color: var(--brand);
+  color: var(--roci-blue);
+}
+.grid-6 .card:hover h3,
+.grid-6 .card:hover p,
+.grid-6 .card:focus-within h3,
+.grid-6 .card:focus-within p {
+  color: #f9f9f5;
 }
 
 /* Icon block: top-left, not centered; still a neat square */
 .svc-icon {
-  color: var(--brand);           /* icon color (Lucide uses currentColor) */
+  color: var(--roci-blue);           /* icon color (Lucide uses currentColor) */
   font-size: 2rem;               /* icon size */
   width: 50px;
   height: 50px;
-  background-color: #193f3a10;   /* subtle brand tint */
+  background-color: #031b2f10;   /* subtle brand tint */
   border-radius: 10px;
 
   /* place it at the top-left of the card stack */
@@ -359,6 +371,11 @@ body {
   align-self: flex-start;        /* ensures it hugs the left in flex stacks */
   margin: 0 0 12px 0;            /* space below the icon */
   transition: transform 0.3s ease;
+}
+.grid-6 .card:hover .svc-icon,
+.grid-6 .card:focus-within .svc-icon {
+  color: #f9f9f5;
+  background-color: rgba(255,255,255,.2);
 }
 
 .grid-6 { display: flex; flex-wrap: wrap; gap: var(--space-4); }
@@ -431,6 +448,10 @@ input, textarea {
 }
 textarea { min-height: 140px; resize: vertical; }
 
+#contact.section {
+  padding: calc(var(--space-7) * 1.75) 0;
+}
+
 /* =============================
    PREFERENCES
 ============================= */
@@ -439,15 +460,15 @@ textarea { min-height: 140px; resize: vertical; }
 }
 
 /* =============================
-   RECENT PROJECTS â€” card format
+   RECENT PROJECTS Ã¢â‚¬â€ card format
 ============================= */
 
 .projects .intro { max-width: 70ch;}
 
-.projects{background-color: var(--brand); 
+.projects{background-color: var(--roci-blue); 
 padding-bottom: 150px;}
 
-/* Responsive 3â†’2â†’1 grid */
+/* Responsive 3Ã¢â€ â€™2Ã¢â€ â€™1 grid */
 .projects-grid {
   display: grid;
   gap: var(--space-4);
@@ -462,7 +483,7 @@ padding-bottom: 150px;}
 .project-card {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--roci-cream);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden; /* ensures the image corners match the card */
@@ -502,7 +523,7 @@ padding-bottom: 150px;}
 .project-title {
   margin: 0;
   font-weight: 700;
-  color: var(--brand);
+  color: var(--roci-blue);
 }
 .project-blurb {
   margin: 0;
@@ -516,7 +537,7 @@ padding-bottom: 150px;}
   align-items: center;
   gap: 6px;
   font-weight: 600;
-  color: var(--brand);
+  color: var(--roci-blue);
   background: transparent;
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -526,7 +547,7 @@ padding-bottom: 150px;}
 }
 
 .project-link:hover {
-  background: var(--bg);
+  background: var(--roci-cream);
   border-color: #cfcfcf;
   transform: translateY(-1px);
 }
@@ -546,7 +567,7 @@ padding-bottom: 150px;}
    PERFORMANCE (tan bg, green headings)
 ============================= */
 .performance {
-  background: var(--bg);
+  background: var(--roci-cream);
   color: var(--ink);
   padding: var(--space-7) 0;
 }
@@ -565,12 +586,12 @@ padding-bottom: 150px;}
 
 /* Headline + accent word */
 .performance h2 {
-  color: var(--brand);
+  color: var(--roci-blue);
   line-height: 1.1;
   margin: 6px 0 var(--space-3);
 }
 .performance .accent {
-  color: var(--brand);
+  color: var(--roci-blue);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: .18em;
@@ -597,7 +618,7 @@ padding-bottom: 150px;}
 }
 .perf-stats .stat { display: grid; align-content: start; gap: 6px; }
 .perf-stats .value {
-  color: var(--brand);
+  color: var(--roci-blue);
   font-weight: 800;
   font-size: clamp(2rem, 4.2vw + 1rem, 3.25rem);
   line-height: 1;
@@ -613,13 +634,13 @@ padding-bottom: 150px;}
   align-items: start;
 }
 .perf-list i {
-  color: var(--brand);
+  color: var(--roci-blue);
   font-size: 20px;         /* Lucide uses currentColor + font-size */
   line-height: 1;
   transform: translateY(2px);
 }
 .perf-list strong {
-  color: var(--brand);
+  color: var(--roci-blue);
   font-weight: 700;
 }
 .perf-list p {
@@ -670,25 +691,25 @@ input[type="submit"].btn {
   font-weight: 500;
   text-decoration: none;
   background: transparent;
-  color: var(--brand);
-  border: 1px solid var(--brand);
+  color: var(--roci-blue);
+  border: 1px solid var(--roci-blue);
   transition: background-color .2s ease, color .2s ease, border-color .2s ease;
 }
 
 /* Hover/focus */
 .btn:hover,
 .btn:focus {
-  background: var(--brand);
-  color: var(--bg);
-  border-color: var(--brand);
+  background: var(--roci-blue);
+  color: var(--roci-cream);
+  border-color: var(--roci-blue);
   text-decoration: none;
 }
-.btn:focus-visible { outline: 3px solid color-mix(in srgb, var(--brand) 20%, black 10%); outline-offset: 3px; }
+.btn:focus-visible { outline: 3px solid color-mix(in srgb, var(--roci-blue) 20%, black 10%); outline-offset: 3px; }
 
 /* Inverted variant (for dark/hero surfaces) */
-.btn--inverted { color: var(--bg); border-color: var(--bg); }
+.btn--inverted { color: var(--roci-cream); border-color: var(--roci-cream); }
 .btn--inverted:hover,
-.btn--inverted:focus { background: var(--bg); color: var(--brand); border-color: var(--bg); }
+.btn--inverted:focus { background: var(--roci-cream); color: var(--roci-blue); border-color: var(--roci-cream); }
 
 /* Keep desktop intrinsic width inside .stack, but go full-width on mobile */
 .stack > .btn { align-self: start; }
@@ -703,7 +724,7 @@ input[type="submit"].btn {
   padding-top: 150px;
 
   /* visual */
-  background-color: var(--brand); /* KEEP: Base color for fallback and blending */
+  background-color: var(--roci-blue); /* KEEP: Base color for fallback and blending */
   border-top: none;
   /* Add z-index to ensure content stacks above the pseudo-element */
   z-index: 1; 
@@ -733,7 +754,7 @@ input[type="submit"].btn {
   letter-spacing: 0.01em;
   line-height: 1.1;
   font-size: clamp(2.8rem, 7vw, 4rem);
-  color: var(--bg);
+  color: var(--roci-cream);
 
   /* layout */
   margin: 0 0 var(--space-3);
@@ -742,13 +763,13 @@ input[type="submit"].btn {
 /* Supporting hero paragraph (Inter/Roboto) */
 .lead {
   font-size: clamp(1.05rem, 1.1vw + .8rem, 1.15rem);
-  color: var(--bg);
+  color: var(--roci-cream);
 }
 
 /* =============================
-   NAVIGATION â€” Rocinante
+   NAVIGATION Ã¢â‚¬â€ Rocinante
    Purpose: pillbox nav with mobile overlay
-   Conventions: layout â†’ typography â†’ visual â†’ misc
+   Conventions: layout Ã¢â€ â€™ typography Ã¢â€ â€™ visual Ã¢â€ â€™ misc
 ============================= */
 
 /* ---- Header wrapper (transparent so hero shows behind the pill) ---- */
@@ -779,10 +800,10 @@ header {
   border-radius: 999px;
 
   /* visual */
-  background: var(--bg);           /* light capsule */
+  background: var(--roci-cream);           /* light capsule */
   border: 1px solid rgba(25, 63, 58, 0.20);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  color: var(--brand);
+  color: var(--roci-blue);
 }
 
 /* keep children from shrinking (prevents pill height jumps) */
@@ -805,7 +826,7 @@ header {
   font-size: 1.25rem;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--brand);
+  color: var(--roci-blue);
   }
 
 .logo svg {
@@ -814,7 +835,7 @@ header {
   height: 20px;
 
   /* visual */
-  stroke: var(--brand);
+  stroke: var(--roci-blue);
   transform: translateY(1px);      /* optical baseline nudge */
 }
 
@@ -828,7 +849,7 @@ header {
 
   /* typography */
   font-weight: 600;
-  color: var(--brand);
+  color: var(--roci-blue);
   text-decoration: none;
 
   /* misc */
@@ -838,7 +859,7 @@ header {
 
 .links a:hover {
   /* On hover, change the border color to make the underline appear */
-  border-bottom-color: var(--brand); 
+  border-bottom-color: var(--roci-blue); 
 }
 
 /* ---- Hamburger toggle (hidden on desktop) ---- */
@@ -870,12 +891,12 @@ header {
   height: 2px;
 
   /* visual */
-  background: var(--brand);        /* brand-colored bars */
+  background: var(--roci-blue);        /* brand-colored bars */
   border-radius: 2px;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* bars â†’ X when checked */
+/* bars Ã¢â€ â€™ X when checked */
 #nav-toggle:checked + label.hamburger span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
@@ -890,7 +911,7 @@ header {
    NAVIGATION RESPONSIVE
 ============================= */
 
-/* ---- Tablet & Mobile (â‰¤ 1024px) ---- */
+/* ---- Tablet & Mobile (Ã¢â€°Â¤ 1024px) ---- */
 @media (max-width: 1024px) {
   .nav-surface {
     /* layout */
@@ -924,7 +945,7 @@ header {
     overflow-y: auto;
 
     /* visual */
-    background: var(--bg);
+    background: var(--roci-cream);
   }
 
   /* Mobile panel logo (real element inside .links) */
@@ -939,10 +960,10 @@ header {
     font-family: 'Ramillas', serif;
     font-weight: 700;
     font-size: 1.4rem;
-    color: var(--brand);
+    color: var(--roci-blue);
   }
   .links .menu-logo svg {
-    stroke: var(--brand);
+    stroke: var(--roci-blue);
     transform: translateY(1px);
   }
 
@@ -951,7 +972,7 @@ header {
     display: block;
     width: 100%;
     padding: 12px 0;
-    color: var(--brand);
+    color: var(--roci-blue);
     font-weight: 600;
     text-decoration: none;
   }
@@ -960,7 +981,7 @@ header {
   .links a::after { display: none; }
 }
 
-/* ---- Desktop (â‰¥ 1025px) ---- */
+/* ---- Desktop (Ã¢â€°Â¥ 1025px) ---- */
 @media (min-width: 1025px) {
   .hamburger { display: none; }    /* hide hamburger */
 
@@ -984,7 +1005,7 @@ header {
    Offer Section (Owner/Pricing)
 ----------------------------- */
 .section-offer {
-  background: var(--brand);
+  background: var(--roci-blue);
   color: #fff;
   padding: 120px 16px;
 }
@@ -1084,117 +1105,154 @@ header {
 }
 
 /* =============================
-   FOOTER â€” brand green + white
+   FOOTER
 ============================= */
-footer {
-  /* visual */
-  background: var(--brand);
-  color: #fff;
-  border-top: none;
+footer.site-footer {
+  background: #031b2f;
+  color: #ecf2ff;
 }
 
-/* top area */
 .footer-top {
-  /* layout */
-  padding: var(--space-7) 0;
-
-  /* visual */
-  border-bottom: 1px solid rgba(255,255,255,.12); /* subtle divider */
+  padding: clamp(48px, 7vw, 90px) 0;
 }
 
-/* columns use your existing row/stack; just color-tune */
+.footer-shell {
+  display: grid;
+  gap: clamp(24px, 4vw, 60px);
+  grid-template-columns: minmax(0, 1.6fr) repeat(2, minmax(0, 1fr));
+  align-items: flex-start;
+}
+
+@media (max-width: 960px) {
+  .footer-shell {
+    grid-template-columns: 1fr;
+  }
+}
+
 footer h4 {
-  /* typography */
   margin: 0 0 var(--space-3);
-  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
   color: #fff;
 }
 
 footer p {
-  color: rgba(255,255,255,.85);
+  color: rgba(236,242,255,.85);
+  max-width: 36ch;
+  line-height: 1.6;
 }
 
-/* links */
 footer a {
-  /* typography */
-  color: #fff;
+  color: inherit;
   text-decoration: none;
-  text-underline-offset: 4px;
-
-  /* visual */
-  transition: color .2s ease, opacity .2s ease, text-decoration-color .2s ease;
-  opacity: .95;
+  transition: opacity .2s ease;
+  opacity: .9;
 }
 footer a:hover {
-  text-decoration: underline;
-  text-decoration-color: rgba(255,255,255,.6);
   opacity: 1;
 }
 
-/* footer column layout */
-.footer-grid {
-  display: grid;
-  gap: var(--space-6);
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  align-items: flex-start;
+.site-footer .logo {
+  margin-right: 0;
+  color: #fff;
+  font-size: 1.35rem;
 }
-.footer-grid > .stack {
-  min-width: 0;
+.site-footer .logo svg {
+  stroke: #fff;
 }
-.footer-grid > .stack + .stack {
-  border-left: 1px solid rgba(255,255,255,.25);
-  padding-left: var(--space-4);
+.footer-logo {
+  margin-bottom: var(--space-3);
 }
 
-@media (min-width: 960px) {
-  .footer-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 960px) {
-  .footer-grid {
-    gap: var(--space-4);
-  }
-  .footer-grid > .stack + .stack {
-    border-left: none;
-    padding-left: 0;
-  }
-}
-
-/* footer logo treatment to match nav logo feel */
-footer .logo {
+.footer-brand .footer-cta {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-family: 'Ramillas', serif;
+  justify-content: center;
+  margin-top: var(--space-4);
+  padding: 14px 32px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--roci-cream);
+  border: 1px solid var(--roci-cream);
   font-weight: 700;
-  font-size: 1.25rem;
-  letter-spacing: .02em;
-  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  transition: color .2s ease, background .2s ease, border-color .2s ease;
 }
-footer .logo svg { stroke: #fff; transform: translateY(1px); }
+.footer-brand .footer-cta:hover {
+  background: var(--roci-cream);
+  color: var(--roci-blue);
+  border-color: var(--roci-cream);
+}
 
-/* bottom bar */
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 150px));
+  gap: 12px 48px;
+}
+.footer-links-grid a {
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .footer-links-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.footer-contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-weight: 500;
+}
+.footer-contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-contact-list i {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.7;
+}
+.footer-contact-list a {
+  opacity: 1;
+}
+
 .footer-bottom {
-  /* layout */
-  padding: var(--space-3) 0;
-
-  /* visual */
-  border-top: 1px solid rgba(255,255,255,.12);
-  color: rgba(255,255,255,.75);
+  border-top: 1px solid rgba(255,255,255,.15);
+  padding: 24px 0;
   font-size: var(--step--1);
+  color: rgba(236,242,255,.75);
 }
 
-/* keep the bottom cluster spread */
-.footer-bottom .cluster { justify-content: space-between; }
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
 
-/* responsive niceties */
-@media (max-width: 960px) {
-  .footer-bottom .cluster {
-    gap: 12px;
+.footer-legal {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-legal span {
+  color: rgba(236,242,255,.6);
+}
+@media (max-width: 640px) {
+  .footer-bottom-bar {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .footer-legal {
+    gap: 8px;
   }
 }
 
@@ -1204,7 +1262,7 @@ footer .logo svg { stroke: #fff; transform: translateY(1px); }
 
 /* Two-column split (image left / copy right), 700 / 700 inside 1400 */
 .custom-code {
-  background: var(--bg);
+  background: var(--roci-cream);
   color: var(--ink);
   padding: clamp(40px, 6vw, 72px) 0;
 }
@@ -1221,7 +1279,7 @@ footer .logo svg { stroke: #fff; transform: translateY(1px); }
   object-fit: cover;
   box-shadow: 0 20px 40px rgba(0,0,0,.12);
 }
-.text-col h2 { color: var(--brand); margin-bottom: .5rem; }
+.text-col h2 { color: var(--roci-blue); margin-bottom: .5rem; }
 .text-col p { margin: 0 0 1rem 0; }
 .why-list {
   list-style: none; margin: 0; padding: 0;
@@ -1234,11 +1292,11 @@ footer .logo svg { stroke: #fff; transform: translateY(1px); }
   align-items: start;
   color: var(--ink);
 }
-.why-list i { color: var(--brand); width: 18px; height: 18px; transform: translateY(2px); }
+.why-list i { color: var(--roci-blue); width: 18px; height: 18px; transform: translateY(2px); }
 
 /* Standard content sections */
-.wd-section { background: var(--bg); color: var(--ink); padding: clamp(36px, 5vw, 64px) 0; }
-.wd-section h2 { color: var(--brand); margin-bottom: .6rem; }
+.wd-section { background: var(--roci-cream); color: var(--ink); padding: clamp(36px, 5vw, 64px) 0; }
+.wd-section h2 { color: var(--roci-blue); margin-bottom: .6rem; }
 .wd-section p { max-width: 80ch; }
 
 /* Responsive */
@@ -1264,7 +1322,7 @@ footer .logo svg { stroke: #fff; transform: translateY(1px); }
   transition: box-shadow .2s ease, border-color .2s ease;
 }
 .faq-item[open] {
-  border-color: color-mix(in srgb, var(--brand) 30%, #fff 70%);
+  border-color: color-mix(in srgb, var(--roci-blue) 30%, #fff 70%);
   box-shadow: var(--shadow);
 }
 .faq-item summary {
@@ -1282,15 +1340,15 @@ footer .logo svg { stroke: #fff; transform: translateY(1px); }
   margin-left: auto;
   font-size: 1.5rem;
   line-height: 1;
-  color: var(--brand);
+  color: var(--roci-blue);
   transition: transform .2s ease;
 }
 .faq-item[open] summary::after {
-  content: "â€“";
+  content: "Ã¢â‚¬â€œ";
   transform: rotate(0deg);
 }
 .faq-item summary:focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--brand) 25%, #000 10%);
+  outline: 3px solid color-mix(in srgb, var(--roci-blue) 25%, #000 10%);
   outline-offset: 4px;
 }
 .faq-answer {
