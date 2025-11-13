@@ -26,58 +26,125 @@ title: Frequently Asked Questions
       <div class="container stack">
         <span class="eyebrow">Questions &amp; Answers</span>
         <h2 id="faq-heading">Top Questions From Small Business Owners</h2>
-        <div class="faq-list">
-          {% set faqs = [
-            {
-              question: "How long does a typical project take?",
-              answer: "Most brochure-style sites launch in 4–6 weeks. More complex builds with custom integrations can run 8–10 weeks. We map timelines in the proposal so you know what to expect."
-            },
-            {
-              question: "Do you really hand-code every website?",
-              answer: "Yes. We start with wireframes, move into design, then code everything in HTML/CSS/JS. No WordPress, no page builders. It keeps your site lean, fast, and secure."
-            },
-            {
-              question: "What’s included in the $175/mo plan?",
-              answer: "You get design, development, hosting, SSL, unlimited edits, analytics setup, and proactive maintenance. It’s the easiest way to keep your site running without hiring in-house."
-            },
-            {
-              question: "Can I cancel the monthly plan?",
-              answer: "There’s a 12-month agreement to cover the initial build. After that, you can move to a maintenance-only plan, continue as-is, or switch to an on-demand engagement."
-            },
-            {
-              question: "What if I already have a website?",
-              answer: "We’ll audit what you’ve got, figure out what’s working, and rebuild the rest from the ground up. Most clients see improved load times, better conversions, and happier visitors."
-            },
-            {
-              question: "Do you offer SEO or Google Ads support?",
-              answer: "Absolutely. We bake in on-page SEO during development and can manage ongoing SEO + Google Ads campaigns so your site actually gets traffic."
-            },
-            {
-              question: "Will I be able to make updates after launch?",
-              answer: "Yes—send edits over and we take care of them. If you want to handle updates yourself, we’ll provide documentation or lightweight CMS options to keep things moving."
-            },
-            {
-              question: "How many pages are included?",
-              answer: "Most starter sites include up to five fully designed pages. Need more? We’ll scope additional pages or landing pages as part of the proposal so pricing stays transparent."
-            },
-            {
-              question: "What content do I need to provide?",
-              answer: "We can work from your existing copy or collaborate on messaging. We’ll guide you on photography, brand voice, and key selling points to make sure every page resonates."
-            },
-            {
-              question: "Do you work with businesses outside Dallas?",
-              answer: "Yes—we partner with clients across the U.S. and Canada. Everything can be handled via Zoom, Loom, and shared project spaces so distance is never a blocker."
-            }
-          ] %}
+        <p class="faq-plan-intro">Toggle between the two options below to see what fits your business best.</p>
 
-          {% for item in faqs %}
-          <details class="faq-item">
-            <summary>{{ item.question }}</summary>
-            <div class="faq-answer">
-              <p>{{ item.answer }}</p>
+        {% set monthlyFaqs = [
+          {
+            question: "How does your monthly website plan work?",
+            answer: "<p>You pay a flat monthly fee for a fully custom, hand-coded website plus hosting, updates, maintenance, and support. There's a 12-month minimum to cover the build, and after that it simply rolls month-to-month. You're getting an ongoing service relationship, so I keep everything running smoothly while you stay focused on the business.</p>"
+          },
+          {
+            question: "What happens if I cancel? Do I keep the website?",
+            answer: "<p>You'll keep your domain, logo, photos, copy, and every other brand asset. You just don't take the proprietary codebase or full site build with you.</p><p>If you ever choose to leave, you're never trapped; you simply continue owning the assets that represent your brand.</p>"
+          },
+          {
+            question: "How long does it take to build my site?",
+            answer: "<p>Most sites launch in 2-4 weeks. The schedule depends on how quickly you deliver photos or content, how fast you share feedback, and how many pages we scope. Once I have what I need, the build moves quickly.</p>"
+          },
+          {
+            question: "What do I need to provide before we start?",
+            answer: "<p>To get moving fast, I'll need:</p><ul><li>Your business basics (services, hours, contact info)</li><li>Photos or any existing brand assets</li><li>Must-have copy or talking points</li><li>Your domain credentials, or I can help you buy one</li></ul><p>If you don't have strong photos or copy yet, I can help create them.</p>"
+          },
+          {
+            question: "How do I request updates or changes after the site is live?",
+            answer: "<p>Just text or email me with what you need updated. Small tweaks usually get handled the same day, and larger changes often turn around in 24-48 hours. Updates are included in your plan, so there are no surprise invoices and you never have to touch the back end.</p>"
+          },
+          {
+            question: "Why don't you use WordPress or page builders?",
+            answer: "<p>Custom-coded static sites stay fast, secure, and stable. They load instantly, don't break when plugins update, present no login page for hackers, and cost less to maintain. You end up with a performance-first build instead of a fragile patchwork of plugins.</p>"
+          },
+          {
+            question: "What's included in the monthly price?",
+            answer: "<p>Your plan includes:</p><ul><li>Custom design and development</li><li>Hosting</li><li>Unlimited edits</li><li>Maintenance</li><li>Basic on-page SEO</li><li>Security for a static stack</li><li>Backups and monitoring</li><li>Support whenever you need it</li></ul><p>No nickel-and-diming; everything required to keep the site healthy is bundled in.</p>"
+          },
+          {
+            question: "Do I own my domain and branding?",
+            answer: "<p>Yes. Your domain, logo, photography, and written content are yours forever. Even if I purchase the domain on your behalf, I transfer ownership if you ever cancel because you should always control the assets that represent your business.</p>"
+          },
+          {
+            question: "How do payments work?",
+            answer: "<p>You'll receive a monthly invoice through a secure provider such as Square or Stripe. After the first setup payment, billing runs automatically.</p><p>If you ever need to adjust timing or method, just reach out and we'll sort it like the small businesses we are.</p>"
+          },
+          {
+            question: "What happens if something happens to you?",
+            answer: "<p>Every site is version-controlled, backed up, and documented. If something ever happened to me, another developer could step in easily because nothing relies on a proprietary platform. Your website stays future-proof, with or without me.</p>"
+          }
+        ] %}
+
+        {% set lumpSumFaqs = [
+          {
+            question: "What's included in the lump sum option?",
+            answer: "<p>The lump sum option is for businesses that want to pay once and own the website.</p><p>It includes:</p><ul><li>Custom design and hand-coded development</li><li>A scoped page count that we define together in your proposal</li><li>Basic on-page SEO (titles, meta data, performance tuning)</li><li>Launch support and connection to your domain</li><li>A short post-launch window for fixes and small tweaks</li></ul><p>After that window, the build is fully yours.</p>"
+          },
+          {
+            question: "Do I own the website and code if I choose lump sum?",
+            answer: "<p>Yes. With the lump sum plan, you own:</p><ul><li>The website code</li><li>The visual design</li><li>The layout and structure</li><li>Your content, branding, and domain</li></ul><p>You're free to host it anywhere and work with any developer in the future.</p>"
+          },
+          {
+            question: "Is hosting included in the lump sum price?",
+            answer: "<p>No. Hosting is not baked into the one-time build fee.</p><p>You can:</p><ul><li>Host with Rocinante on a simple monthly plan that covers hosting plus basic monitoring</li><li>Host it yourself (Netlify, Vercel, or another provider) and I'll hand over the files and help you get set up</li></ul><p>We'll review both paths in your proposal so you can pick what fits.</p>"
+          },
+          {
+            question: "Are monthly updates or edits included in the lump sum?",
+            answer: "<p>No. The lump sum covers the initial build and launch, not ongoing edits.</p><p>If you want continuing changes you can:</p><ul><li>Add an optional Care Plan that bundles hosting and updates for a flat monthly price</li><li>Request changes as-needed at an hourly or per-task rate</li></ul><p>You get support options without being forced into a subscription.</p>"
+          },
+          {
+            question: "What is the Care Plan and how is it different from the subscription site?",
+            answer: "<p>The Care Plan is for lump sum clients who want me to host the site, monitor performance, make content updates, and handle small fixes before they become problems.</p><p><strong>The difference:</strong></p><ul><li>Monthly Subscription Plan = you rent the site, and hosting plus updates are included.</li><li>Lump Sum + Care Plan = you own the site, and hosting plus updates become a separate service.</li></ul>"
+          },
+          {
+            question: "Can I start lump sum and add a Care Plan later?",
+            answer: "<p>Yes. Launch the site, see how often you need changes, and then add a Care Plan later if it makes sense.</p><p>If you'd rather stay off a subscription, we can always work hourly or per change instead.</p>"
+          },
+          {
+            question: "What happens if I don't want any monthly plan at all?",
+            answer: "<p>No problem.</p><p>I build and launch the site, hand over the code and assets, and then you or another developer handles hosting plus future updates.</p><p>You aren't locked into me; you fully own the build and can take it anywhere.</p>"
+          },
+          {
+            question: "Does the lump sum plan still include the same performance and quality?",
+            answer: "<p>Yes. Every site I build, whether subscription or lump sum, is custom coded, fast, secure (static, no database to hack), and tuned for Core Web Vitals.</p><p>The difference between plans is purely how you pay and who owns the code.</p>"
+          },
+          {
+            question: "How long does a lump sum project take?",
+            answer: "<p>Most lump sum projects wrap in roughly 2-4 weeks, depending on:</p><ul><li>How many pages we are building</li><li>How quickly you provide content and feedback</li><li>How complex the design requirements are</li></ul><p>Your proposal includes a realistic timeline so you know what to expect.</p>"
+          },
+          {
+            question: "How do I know if lump sum or monthly is better for me?",
+            answer: "<p>Here's the quick rule of thumb:</p><ul><li>Choose <strong>Monthly</strong> if you want low upfront cost, ongoing updates included, and you don't mind not owning the code.</li><li>Choose <strong>Lump Sum</strong> if you prefer to own everything outright and are comfortable self-hosting or adding a Care Plan for help.</li></ul><p>We can walk through both options on a discovery call and pick the one that matches your cash flow.</p>"
+          }
+        ] %}
+
+        <div class="faq-toggle-group" role="tablist" aria-label="FAQ plan selector">
+          <button type="button" class="faq-toggle is-active" role="tab" id="faq-tab-monthly" aria-controls="faq-panel-monthly" aria-selected="true" data-panel="monthly">Monthly Subscription</button>
+          <button type="button" class="faq-toggle" role="tab" id="faq-tab-lump" aria-controls="faq-panel-lump" aria-selected="false" data-panel="lump-sum">Lump Sum (Pay Once)</button>
+        </div>
+
+        <div class="faq-panels">
+          <div class="faq-panel is-active" data-panel="monthly" role="tabpanel" id="faq-panel-monthly" aria-labelledby="faq-tab-monthly">
+            <div class="faq-list">
+              {% for item in monthlyFaqs %}
+              <details class="faq-item">
+                <summary>{{ item.question }}</summary>
+                <div class="faq-answer">
+                  {{ item.answer | safe }}
+                </div>
+              </details>
+              {% endfor %}
             </div>
-          </details>
-          {% endfor %}
+          </div>
+
+          <div class="faq-panel" data-panel="lump-sum" role="tabpanel" id="faq-panel-lump" aria-labelledby="faq-tab-lump" hidden>
+            <div class="faq-list">
+              {% for item in lumpSumFaqs %}
+              <details class="faq-item">
+                <summary>{{ item.question }}</summary>
+                <div class="faq-answer">
+                  {{ item.answer | safe }}
+                </div>
+              </details>
+              {% endfor %}
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -88,6 +155,34 @@ title: Frequently Asked Questions
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
+
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    const faqPanels = document.querySelectorAll('.faq-panel');
+
+    faqToggles.forEach((button) => {
+      button.addEventListener('click', () => {
+        if (button.classList.contains('is-active')) {
+          return;
+        }
+
+        const target = button.dataset.panel;
+
+        faqToggles.forEach((toggle) => {
+          const isActive = toggle === button;
+          toggle.classList.toggle('is-active', isActive);
+          toggle.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+
+        faqPanels.forEach((panel) => {
+          const isTarget = panel.dataset.panel === target;
+          panel.classList.toggle('is-active', isTarget);
+          panel.hidden = !isTarget;
+          panel.querySelectorAll('details').forEach((detail) => {
+            detail.open = false;
+          });
+        });
+      });
+    });
 
     // Optional: allow only one FAQ open at a time for a cleaner experience.
     document.querySelectorAll('.faq-item').forEach((item) => {
@@ -104,3 +199,10 @@ title: Frequently Asked Questions
   </script>
 </body>
 </html>
+
+
+
+
+
+
+

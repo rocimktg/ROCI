@@ -1,11 +1,13 @@
 {
   "name": "rocinante-website",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000R\u0000O\u0000C\u0000I\u0000\r\u0000 \u0000",
+  "description": "Rocinante Marketing website",
+  "main": ".eleventy.js",
   "scripts": {
     "build": "eleventy",
     "start": "eleventy --serve",
-    "watch": "eleventy --watch"
+    "watch": "eleventy --watch",
+    "dev": "eleventy --serve"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
   },
-  "main": ".eleventy.js",
   "dependencies": {
     "a-sync-waterfall": "^1.0.1",
     "acorn": "^8.15.0",
