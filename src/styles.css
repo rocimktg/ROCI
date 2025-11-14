@@ -491,116 +491,104 @@ textarea { min-height: 140px; resize: vertical; }
 }
 
 /* =============================
-   RECENT PROJECTS â€” card format
+   RECENT PROJECTS – floating mockups
 ============================= */
-
-.projects .intro { max-width: 70ch;}
-
-.projects{background-color: var(--roci-blue); 
-padding-bottom: 150px;}
-
-/* Responsive 3â†’2â†’1 grid */
-.projects-grid {
-  display: grid;
-  gap: var(--space-4);
-  grid-template-columns: 1fr;
-  justify-items: stretch;   /* ensures each card fills the grid cell */
-  align-items: stretch;     /* fixes any vertical offset */
+.projects {
+  background: var(--roci-cream);
+  padding: clamp(var(--space-5), 8vw, var(--space-7)) 0 clamp(var(--space-5), 8vw, var(--space-6));
+  border-top: none;
 }
-@media (min-width: 720px)  { .projects-grid { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 1040px) { .projects-grid { grid-template-columns: 1fr 1fr 1fr; } }
 
-/* Card */
-.project-card {
+.projects .eyebrow,
+.projects h2 {
+  color: var(--roci-blue);
+}
+
+.projects-intro,
+.projects .intro {
+  max-width: 70ch;
+  color: rgba(3, 27, 47, 0.82);
+  margin-bottom: clamp(var(--space-2), 2vw, var(--space-3));
+}
+
+.projects-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: clamp(var(--space-2), 2.5vw, var(--space-3));
+  align-items: start;
+}
+
+.project-showcase {
   display: flex;
   flex-direction: column;
-  background: var(--roci-cream);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow: hidden; /* ensures the image corners match the card */
-  justify-content: flex-start; /* force natural top alignment */
-  align-items: stretch;        /* make sure full width is used */
+  gap: clamp(var(--space-1), 1.5vw, var(--space-2));
+  align-items: center;
+  color: var(--roci-blue);
 }
 
-/* Full-width image */
-.project-media {
+.project-mockup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 210px;
   position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9; /* gives a clean, consistent height */
-  overflow: hidden;
-  display: block;              /* override any flex/grid inheritance */
-  margin: 0;                   /* remove any stray spacing */
+  margin-bottom: 4px;
 }
 
-.project-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* keeps the image nicely cropped */
-  display: block;
-  border-bottom: 1px solid var(--line);
+.project-mockup img {
+  width: clamp(240px, 28vw, 330px);
   height: auto;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
+  position: relative;
+  z-index: 1;
 }
 
-
-/* Card body */
-.project-body {
-  padding: var(--space-4);
-  display: grid;
-  gap: 10px;
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
 }
+
 .project-title {
   margin: 0;
   font-weight: 700;
   color: var(--roci-blue);
 }
+
 .project-blurb {
   margin: 0;
-  color: var(--ink);
-  line-height: 1.5;
+  color: rgba(3, 27, 47, 0.78);
+  line-height: 1.6;
+  max-width: 34ch;
 }
-/* Link button */
+
 .project-link {
-  justify-self: start;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  align-self: flex-start;
+  gap: 8px;
   font-weight: 600;
+  margin-top: 4px;
   color: var(--roci-blue);
-  background: transparent;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 6px 10px;
-  text-decoration: none;
-  transition: border-color .2s ease, background .2s ease, transform .2s ease;
 }
 
-.project-link:hover {
-  background: var(--roci-cream);
-  border-color: #cfcfcf;
-  transform: translateY(-1px);
-}
-
-.project-link svg {
-  width: 16px;
-  height: 16px;
+.project-link i {
+  width: 18px;
+  height: 18px;
   stroke-width: 2;
 }
 
-.projects h2{color: #fff;}
-
-.projects-intro {color: #fff;
-    }
-
 /* =============================
-   PERFORMANCE (tan bg, green headings)
+   PERFORMANCE (inverted blue)
 ============================= */
 .performance {
-  background: var(--roci-cream);
-  color: var(--ink);
+  background: var(--roci-blue);
+  color: var(--roci-cream);
   padding: var(--space-7) 0;
+}
+.performance .eyebrow {
+  color: rgba(240, 238, 233, 0.8);
 }
 
 /* Two-column layout (mobile-first) */
@@ -617,12 +605,12 @@ padding-bottom: 150px;}
 
 /* Headline + accent word */
 .performance h2 {
-  color: var(--roci-blue);
+  color: var(--roci-cream);
   line-height: 1.1;
   margin: 6px 0 var(--space-3);
 }
 .performance .accent {
-  color: var(--roci-blue);
+  color: var(--roci-cream);
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: .18em;
@@ -630,7 +618,7 @@ padding-bottom: 150px;}
 
 /* Regular paragraph tone on tan */
 .performance .muted-off {
-  color: #223; /* readable neutral on tan; adjust if desired */
+  color: rgba(240, 238, 233, 0.85);
   max-width: 64ch;
 }
 
@@ -649,12 +637,12 @@ padding-bottom: 150px;}
 }
 .perf-stats .stat { display: grid; align-content: start; gap: 6px; }
 .perf-stats .value {
-  color: var(--roci-blue);
+  color: var(--roci-cream);
   font-weight: 800;
   font-size: clamp(2rem, 4.2vw + 1rem, 3.25rem);
   line-height: 1;
 }
-.perf-stats .label { color: #223; opacity: .85; }
+.perf-stats .label { color: rgba(240, 238, 233, 0.8); }
 
 /* Benefits list */
 .perf-list { display: grid; gap: var(--space-3); margin: var(--space-3) 0 var(--space-4); }
@@ -665,27 +653,27 @@ padding-bottom: 150px;}
   align-items: start;
 }
 .perf-list i {
-  color: var(--roci-blue);
+  color: var(--roci-cream);
   font-size: 20px;         /* Lucide uses currentColor + font-size */
   line-height: 1;
   transform: translateY(2px);
 }
 
 .perf-list strong {
-  color: var(--roci-blue);
+  color: var(--roci-cream);
   font-weight: 700;
 }
 .perf-list p {
   margin: 4px 0 0 0;
-  color: #223;
+  color: rgba(240, 238, 233, 0.8);
 }
 
 /* Right side frame */
 .perf-frame {
-  background: #fff;
-  border: 1px solid rgba(0,0,0,.08);
+  background: var(--roci-cream);
+  border: 1px solid rgba(255,255,255,.25);
   border-radius: 22px;
-  box-shadow: 0 18px 38px rgba(0,0,0,.10);
+  box-shadow: 0 18px 38px rgba(0,0,0,.35);
   overflow: hidden;
   margin: 0;
 }
