@@ -26,6 +26,7 @@
   --space-5: 32px;
   --space-6: 48px;
   --space-7: 64px;
+  --section-padding-block: 120px;
 
   /* Brand colors */
   --roci-blue: #031b2f; /* ROCI BLUE */
@@ -38,6 +39,13 @@
   --muted: #333;
   --line: #e6e6e6;
   --accent: #bdbdbd;
+}
+
+@media (max-width: 960px) {
+  :root { --section-padding-block: 96px; }
+}
+@media (max-width: 640px) {
+  :root { --section-padding-block: 72px; }
 }
 
 /* ----------------------------
@@ -93,11 +101,13 @@ p{ margin:0 0 var(--space-3); color:var(--muted); }
 /* Reset / base */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { height: 100%; }
+html { overflow-x: hidden; }
 
 body {
   /* layout */
   margin: 0;
-  overflow-x: clip;
+  width: 100%;
+  overflow-x: hidden;
 
   /* typography */
   font-family: 'Roboto', system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif;
@@ -108,12 +118,20 @@ body {
   background: var(--roci-cream);
 }
 
+
 /* =============================
    UTILITIES
    - Layout helpers and generic components
 ============================= */
 .container { max-width: var(--container); padding-inline: var(--gutter); margin-inline: auto; }
-.section { padding: var(--space-7) 0; border-top: 1px solid var(--line); }
+.section {
+  padding-block: var(--section-padding-block);
+  border-top: 1px solid var(--line);
+}
+.section > *:first-child { margin-top: 0; }
+.section > *:last-child { margin-bottom: 0; }
+.section .container > *:first-child { margin-top: 0; }
+.section .container > *:last-child { margin-bottom: 0; }
 
 .stack { display: flex; flex-direction: column; gap: var(--space-3); }
 .cluster { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-3); }
@@ -479,10 +497,6 @@ input, textarea {
 }
 textarea { min-height: 140px; resize: vertical; }
 
-#contact.section {
-  padding: calc(var(--space-7) * 1.75) 0;
-}
-
 /* =============================
    PREFERENCES
 ============================= */
@@ -495,7 +509,7 @@ textarea { min-height: 140px; resize: vertical; }
 ============================= */
 .projects {
   background: var(--roci-cream);
-  padding: clamp(var(--space-5), 8vw, var(--space-7)) 0 clamp(var(--space-5), 8vw, var(--space-6));
+  padding-inline: clamp(var(--space-3), 4vw, var(--space-5));
   border-top: none;
 }
 
@@ -585,7 +599,7 @@ textarea { min-height: 140px; resize: vertical; }
 .performance {
   background: var(--roci-blue);
   color: var(--roci-cream);
-  padding: var(--space-7) 0;
+  padding-inline: 0;
 }
 .performance .eyebrow {
   color: rgba(240, 238, 233, 0.8);
@@ -741,7 +755,8 @@ input[type="submit"].btn {
 ============================= */
 .hero {
   /* layout */
-  padding-top: 150px;
+  padding-bottom: var(--section-padding-block);
+  padding-top: calc(var(--section-padding-block) + 70px);
 
   /* visual */
   background-color: var(--roci-blue); /* KEEP: Base color for fallback and blending */
@@ -1030,7 +1045,7 @@ header {
 .section-offer {
   background: var(--roci-blue);
   color: #fff;
-  padding: 120px 16px;
+  padding-inline: 16px;
 }
 .offer-grid {
   display: grid;
