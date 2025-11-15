@@ -755,9 +755,7 @@ input[type="submit"].btn {
 ============================= */
 .hero {
   /* layout */
-  padding-bottom: var(--section-padding-block);
-  padding-top: calc(var(--section-padding-block) + 70px);
-
+  padding-block: var(--section-padding-block);
   /* visual */
   background-color: var(--roci-blue); /* KEEP: Base color for fallback and blending */
   border-top: none;
@@ -810,15 +808,13 @@ input[type="submit"].btn {
 /* ---- Header wrapper (transparent so hero shows behind the pill) ---- */
 header {
   /* layout */
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   z-index: 20;
 
   /* visual */
   padding-top: 25px;      /* spacing from top edge */
-  background: transparent;
+  background: var(--roci-blue);
 }
 
 /* ---- Constrain pill to page container (1400px max with gutters) ---- */
