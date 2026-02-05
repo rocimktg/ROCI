@@ -1,0 +1,142 @@
+.webdesign-hero {
+  padding: var(--space-10) 0 var(--space-8);
+  background-color: #f1f1f1;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  color: #2563eb;
+}
+
+.webdesign-hero__inner {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.webdesign-hero__eyebrow {
+  margin: 0 0 var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+}
+
+.webdesign-hero__copy h1 {
+  margin: 0 0 var(--space-3);
+  font-size: clamp(2.4rem, 3vw + 1.4rem, 3.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #2563eb;
+}
+
+.webdesign-hero__lede {
+  margin: 0;
+  color: var(--muted);
+  max-width: 60ch;
+  font-size: 1.05rem;
+}
+
+.webdesign-overview__grid {
+  display: grid;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.webdesign-overview {
+  padding: var(--space-11) 0;
+}
+
+.webdesign-overview__copy {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.webdesign-overview__copy .intro {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.webdesign-overview__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.webdesign-overview__list li {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.webdesign-overview__list strong {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.webdesign-overview__media {
+  width: min(100%, 520px);
+  justify-self: center;
+}
+
+.webdesign-overview__media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.webdesign-testimonial {
+  background: linear-gradient(135deg, #0f172a 0%, #111827 55%, #1f2937 100%);
+  color: #e2e8f0;
+}
+
+.webdesign-testimonial__shell {
+  display: grid;
+  gap: var(--space-4);
+  text-align: center;
+  padding: var(--space-11) 0;
+}
+
+.webdesign-testimonial__eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #93c5fd;
+  font-size: 0.8rem;
+}
+
+.webdesign-testimonial__quote {
+  margin: 0;
+  font-size: clamp(1.2rem, 1.2vw + 1rem, 1.6rem);
+  font-weight: 600;
+}
+
+.webdesign-testimonial__author {
+  margin: 0;
+  color: rgba(226, 232, 240, 0.9);
+  font-weight: 600;
+}
+
+.webdesign-cta {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.webdesign-cta .lead {
+  margin: 0;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.process__intro .body {
+  margin: 0;
+  color: var(--muted);
+}
+
+@media (min-width: 860px) {
+  .webdesign-overview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

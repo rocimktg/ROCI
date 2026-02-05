@@ -1,0 +1,137 @@
+.faq-hero {
+  padding: var(--space-10) 0 var(--space-8);
+  background-color: #f1f1f1;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  color: #2563eb;
+}
+
+.faq-hero__inner {
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+.faq-hero__eyebrow {
+  margin: 0 0 var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+}
+
+.faq-hero__copy h1 {
+  margin: 0 0 var(--space-3);
+  font-size: clamp(2.4rem, 3vw + 1.4rem, 3.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #2563eb;
+}
+
+.faq-hero__lede {
+  margin: 0;
+  color: var(--muted);
+  max-width: 60ch;
+  font-size: 1.05rem;
+}
+
+.faq-section__eyebrow {
+  margin: 0 0 var(--space-2);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.faq-plan-intro {
+  margin: var(--space-4) 0 var(--space-5);
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.faq-toggle-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 6px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.faq-toggle {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background: #ffffff;
+  color: var(--muted);
+  transition: transform 120ms ease, box-shadow 120ms ease, color 120ms ease;
+}
+
+.faq-toggle.is-active {
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(120deg, #ef4444 0%, #3b82f6 100%) border-box;
+  box-shadow: var(--shadow);
+  color: #0f172a;
+}
+
+.faq-toggle:focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+.faq-panels {
+  margin-top: var(--space-6);
+}
+
+.faq-panel {
+  display: none;
+  gap: var(--space-4);
+}
+
+.faq-panel.is-active {
+  display: grid;
+}
+
+.faq-panel[hidden] {
+  display: none;
+}
+
+.faq-list {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.faq-answer {
+  color: var(--muted);
+}
+
+.faq-answer p {
+  margin: 0 0 var(--space-2);
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-answer ul {
+  margin: var(--space-2) 0 var(--space-2) var(--space-5);
+  padding: 0;
+  color: var(--muted);
+}
+
+.faq-answer li {
+  margin-bottom: 6px;
+}
+
+@media (min-width: 860px) {
+  .faq-hero__inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

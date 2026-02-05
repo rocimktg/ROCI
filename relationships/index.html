@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+                        <style>
+            :root {
+                /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
+                --primary: #ff6a3e;
+                --primaryLight: #ffba43;
+                --secondary: #ffba43;
+                --secondaryLight: #ffba43;
+                --headerColor: #1a1a1a;
+                --bodyTextColor: #4e4b66;
+                --bodyTextColorWhite: #fafbfc;
+                /* 13px - 16px */
+                --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+                /* 31px - 49px */
+                --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+                --bodyFontSize: 1rem;
+                /* 60px - 100px top and bottom */
+                --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+            }
+            
+            body {
+            font-family: 'Roboto', 'Arial', sans-serif;
+                        margin: 0;
+                    padding: 0;
+                    }
+            
+            *, *:before, *:after {
+                /* prevents padding from affecting height and width */
+                box-sizing: border-box;
+            }
+            
+            .cs-topper {
+                font-size: var(--topperFontSize);
+                line-height: 1.2em;
+                text-transform: uppercase;
+                text-align: inherit;
+                letter-spacing: .1em;
+                font-weight: 700;
+                color: var(--primary);
+                margin-bottom: 0.25rem;
+                display: block;
+            }
+            
+            .cs-title {
+                font-size: var(--headerFontSize);
+                font-weight: 900;
+                line-height: 1.2em;
+                text-align: inherit;
+                max-width: 43.75rem;
+                margin: 0 0 1rem 0;
+                color: var(--headerColor);
+                position: relative;
+            }
+            
+            .cs-text {
+                font-size: var(--bodyFontSize);
+                line-height: 1.5em;
+                text-align: inherit;
+                width: 100%;
+                max-width: 40.625rem;
+                margin: 0;
+                color: var(--bodyTextColor);
+            } 
+            /*-- -------------------------- -->
+<---    Report A Stitch         -->
+<--- -------------------------- -*/
+/* Success Modal */
+@media only screen and (min-width: 0em) {
+  .cs-report-button {
+    position: fixed;
+    background-color: #fff;
+    border: none;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    z-index: 10000;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 2.875rem;
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1.875rem;
+    padding: 0 1.5rem;
+    transition: transform 0.2s, color 0.3s, background-color 0.3s;
+  }
+  .cs-report-button:hover {
+    transform: scale(1.1);
+    background-color: #0C293E;
+    color: #fff;
+  }
+  .cs-report-button:hover .light {
+    display: none;
+  }
+  .cs-report-button:hover .dark {
+    display: block;
+  }
+  .cs-report-button .dark {
+    display: none;
+  }
+  .cs-report-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    visibility: hidden;
+    transition: opacity .3s, visibility .3s;
+    pointer-events: none;
+  }
+  .cs-report-form.cs-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .cs-report-form.cs-open .cs-form {
+    transform: translateY(0);
+  }
+  .cs-report-form .cs-form {
+    width: 90%;
+    max-width: 46.875rem;
+    /* 24px - 48px top and bottom */
+    /* 16px - 48px left and right */
+    padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
+    /* prevents flexbox from affecting height and width */
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 0.75rem;
+    transform: translateY(6.25rem);
+    transition: transform .3s;
+  }
+  .cs-report-form .closeReport {
+    font-size: 20px;
+    border: none;
+    width: 1.8em;
+    height: 1.8em;
+    background: #f1f1f3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    position: absolute;
+    top: clamp(1.5rem, 5.18vw, 3rem);
+    right: clamp(1rem, 4vw, 3rem);
+    transition: filter .3s, transform .3s;
+  }
+  .cs-report-form .closeReport:hover {
+    filter: brightness(90%);
+    transform: rotate(90deg);
+  }
+  .cs-report-form h2 {
+    font-size: 1.5625rem;
+    text-align: left;
+  }
+  .cs-report-form p {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    margin: 0 0 2rem 0;
+    max-width: 34.375rem;
+  }
+  .cs-report-form .cs-label {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    width: 100%;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  .cs-report-form .cs-input {
+    font-size: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0;
+    padding-left: 1.5rem;
+    color: var(--headerColor);
+    background-color: #F7F7F7;
+    border-radius: 0.5rem;
+    border: none;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+  }
+  .cs-report-form .cs-input::placeholder {
+    color: #7D799C;
+    opacity: .6;
+  }
+  .cs-report-form .cs-textarea {
+    min-height: 7.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-family: inherit;
+  }
+  .cs-report-form .cs-button-solid {
+    font-size: 1rem;
+    line-height: 3.5rem;
+    text-decoration: none;
+    font-weight: 700;
+    overflow: hidden;
+    margin: 0;
+    color: #fff;
+    padding: 0 3rem;
+    border-radius: 0.5rem;
+    background-color: #0C293E;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color .3s;
+  }
+  .cs-report-form .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #1a1a1a!important;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+  }
+  .cs-report-form .cs-button-solid:hover {
+    color: #0C293E;
+  }
+  .cs-report-form .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  .cs-report-form .cs-submit {
+    width: 100%;
+    min-width: 12.5rem;
+    border: none;
+  }
+  .cs-report-form .cs-submit:hover {
+    color: #fff;
+    cursor: pointer!important;
+  }
+}       
+        </style>
+                <style>
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #reviews-56 {
+        padding: var(--sectionPadding);
+    }
+    #reviews-56 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        row-gap: clamp(3rem, 6vw, 4rem);
+        /* 60px - 108px */
+        column-gap: clamp(3.7rem, 8vw, 6.75rem);
+    }
+    #reviews-56 .cs-content {
+        text-align: left;
+        width: 100%;
+        max-width: 33.875rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #reviews-56 .cs-review {
+        /* 15px - 17px */
+        font-size: clamp(15px, 5vw, 1.0625rem);
+        line-height: 1.5em;
+        margin: 0 auto;
+        /* 28px - 32px */
+        margin-bottom: clamp(1.75rem, 0.5vw, 2rem);
+        padding: 0.75rem 0 0.75rem 1.5rem;
+        color: var(--headerColor);
+        /* Prevents padding from affecting height & width */
+        box-sizing: border-box;
+        position: relative;
+    }
+    #reviews-56 .cs-review:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 0.3125rem;
+        background: var(--primaryLight);
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+    #reviews-56 .cs-name {
+        font-size: 1.0625rem;
+        font-weight: 700;
+        margin: 0.75rem 0 0;
+        display: block;
+        color: var(--headerColor);
+    }
+    #reviews-56 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #reviews-56 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #reviews-56 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #reviews-56 .cs-picture {
+        width: 98%;
+        margin: 0;
+        position: relative;
+        display: block;
+        /* width divided by height 320/340 */
+        aspect-ratio: 0.94117647;
+        /* 8px - 12px */
+        margin-left: clamp(0.5rem, 1vw, 0.75rem);
+    }
+    #reviews-56 .cs-picture:before {
+        content: "";
+        position: absolute;
+        height: 12.125rem;
+        width: 12.125rem;
+        background: var(--primaryLight);
+        opacity: 1;
+        /* -8px to -12px */
+        /* the calc function sets the clamp value to a negative number */
+        top: calc(clamp(0.5rem, 0.6vw, 0.75em) * -1);
+        left: calc(clamp(0.5rem, 0.6vw, 0.75em) * -1);
+    }
+    #reviews-56 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #reviews-56 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    #reviews-56 .cs-content {
+        text-align: left;
+        align-items: flex-start;
+    }
+    #reviews-56 .cs-picture {
+        /* 336px - 530px */
+        width: clamp(21rem, 44vw, 33.125rem);
+        /* 534px - 641px */
+        height: clamp(33.375rem, 58.6vw, 40.0625rem);
+        /* reset margin to account for the pesudo element square positioning */
+        margin: 0.75rem 0 0 0.75rem;
+        margin-right: 0;
+        margin-bottom: 0;
+        /* no longer need aspect ratio */
+        aspect-ratio: initial;
+        /* prevents flexbox from squishing it */
+        flex: none;
+    }
+}
+
+</style>
+
+            </head>
+            <body>
+                <!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-56">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Reviews/man-smiling-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Reviews/man-smiling.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/man-smiling.jpg" alt="man smiling" width="320" height="340">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">Building Relationships</span>
+            <h2 class="cs-title">Why our Clients <span>Love Us</span></h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus at incidunt dignissimos repellendus? Officiis quo architecto eligendi? Cum, recusandae.
+            </p>
+            <p class="cs-review">
+                Lorem ipsum dolor sit amet, consectetur adipiscing. Orci odio morbi vel ut lectus risus dis. Euismod dui etiam sed posuere odio tortor vitae ultrices. Ultrices sem et at egestas turpis scelerisque.
+
+                <span class="cs-name">Marie-Claire</span>
+            </p>
+            <a href="" class="cs-button-solid">Read Reviews</a>
+        </div>
+    </div>
+</section>
+                
+            </body>
+        </html>
+
