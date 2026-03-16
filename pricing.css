@@ -126,11 +126,11 @@
 }
 
 .plan-title {
-  font-size: 0.75rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   font-weight: 800;
-  color: var(--muted);
+  color: var(--ink);
 }
 
 .plan-badge {
@@ -164,12 +164,34 @@
   gap: var(--space-2);
   align-items: start;
   color: var(--ink);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.plan-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .plan-list li::before {
   content: ">";
   color: var(--accent);
   font-weight: 800;
+}
+
+.plan-pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #64748b;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 2px 8px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .plan-list li.is-muted {
@@ -206,12 +228,90 @@
   color: var(--muted);
 }
 
+.alacarte-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.alacarte-item {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.alacarte-item__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.alacarte-item__name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.alacarte-item__price {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent-strong);
+  white-space: nowrap;
+}
+
+.alacarte-item__desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.pricing-divider {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 0;
+}
+
+.disclaimer-box {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  display: grid;
+  gap: var(--space-2);
+}
+
+.disclaimer-box__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.disclaimer-box__body {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 @media (min-width: 860px) {
   .pricing-hero__inner {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   }
+}
 
+@media (min-width: 960px) {
   .pricing-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .plan-header {
+    min-height: 3.5rem;
+  }
+
+  .alacarte-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

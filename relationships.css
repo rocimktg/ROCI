@@ -33,6 +33,23 @@
   object-fit: cover;
 }
 
+.relationships__photoTag {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #f8fafc;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.01em;
+  pointer-events: none;
+}
+
 .relationships__content {
   display: grid;
   gap: var(--space-4);
