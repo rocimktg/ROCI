@@ -1,0 +1,100 @@
+/* ============================================================
+   Reputation Engine Section
+   ============================================================ */
+
+.reputation-engine {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.reputation-engine .work__intro {
+  max-width: 720px;
+}
+
+.reputation-engine .work__intro .eyebrow {
+  color: #93c5fd;
+}
+
+.reputation-engine .work__intro h2 {
+  color: #f8fafc;
+}
+
+.reputation-engine .work__intro .body {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  max-width: 64ch;
+}
+
+.reputation-engine .work-divider {
+  background: #2563eb;
+}
+
+/* ---- explainer copy ---- */
+.reputation-engine__explainer {
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(37, 99, 235, 0.3);
+  border-radius: var(--radius);
+  padding: var(--space-6) var(--space-7);
+  margin-bottom: var(--space-9);
+  max-width: 760px;
+}
+
+.reputation-engine__explainer p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.reputation-engine__explainer strong {
+  color: #93c5fd;
+}
+
+/* ---- platform logos ---- */
+.reputation-engine__platforms {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  margin-bottom: var(--space-9);
+  flex-wrap: wrap;
+}
+
+.reputation-engine__platform {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  opacity: 1;
+}
+
+.reputation-engine__platform-logo {
+  width: 28px;
+  height: 28px;
+}
+
+.reputation-engine__platform-logo svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.reputation-engine__platform-name {
+  font-weight: 600;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+
+/* ---- responsive ---- */
+@media (min-width: 640px) {
+  .reputation-engine__platforms {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 860px) {
+  .reputation-engine__explainer {
+    padding: var(--space-7) var(--space-8);
+  }
+}
