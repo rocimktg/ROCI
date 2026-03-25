@@ -201,6 +201,18 @@ button:focus-visible {
   color: var(--accent);
 }
 
+.btn.outline {
+  background: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.btn.outline:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
 .btn.light {
   border-color: rgba(255, 255, 255, 0.5);
   color: #fff;

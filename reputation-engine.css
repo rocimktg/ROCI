@@ -29,6 +29,28 @@
   background: #2563eb;
 }
 
+/* ---- header row ---- */
+.reputation-engine__header-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.pro-feature-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(22, 163, 74, 0.18);
+  border: 1px solid rgba(22, 163, 74, 0.45);
+  color: #4ade80;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
 /* ---- explainer copy ---- */
 .reputation-engine__explainer {
   background: rgba(37, 99, 235, 0.12);
