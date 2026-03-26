@@ -95,6 +95,152 @@
   font-size: 0.8rem;
 }
 
+/* Mobile plan cards */
+.ct-mobile {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.ct-mobile-card {
+  background: #ffffff;
+  border: 1px solid #dde3ed;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.07);
+  display: flex;
+  flex-direction: column;
+}
+
+.ct-mobile-card--pro {
+  border-color: #0f172a;
+}
+
+.ct-mobile-card__head {
+  padding: var(--space-6) var(--space-5);
+  background: #f8fafc;
+  border-bottom: 1px solid #dde3ed;
+  text-align: left;
+}
+
+.ct-mobile-card--pro .ct-mobile-card__head {
+  background: #0f172a;
+  border-bottom-color: #0f172a;
+  position: relative;
+}
+
+.ct-mobile-card__name {
+  margin: 0 0 var(--space-1);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.ct-mobile-card--pro .ct-mobile-card__name {
+  color: #ffffff;
+}
+
+.ct-mobile-card__price {
+  margin: 0 0 var(--space-3);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.ct-mobile-card__price span {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+
+.ct-mobile-card--pro .ct-mobile-card__price {
+  color: #ffffff;
+}
+
+.ct-mobile-card--pro .ct-mobile-card__price span {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.ct-mobile-card__desc {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.ct-mobile-card--pro .ct-mobile-card__desc {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.ct-mobile-card__list {
+  list-style: none;
+  padding: var(--space-4) var(--space-5);
+  margin: 0;
+  display: grid;
+  gap: 0;
+  flex: 1;
+}
+
+.ct-mobile-card__list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--ink);
+}
+
+.ct-mobile-card__list li:last-child {
+  border-bottom: none;
+}
+
+.ct-mobile-card__list li::before {
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  width: 1.2rem;
+  text-align: center;
+}
+
+.ct-mobile-card__list li.ct-has::before {
+  content: "✓";
+  color: #16a34a;
+}
+
+.ct-mobile-card__list li.ct-not {
+  color: #94a3b8;
+}
+
+.ct-mobile-card__list li.ct-not::before {
+  content: "—";
+  color: #cbd5e1;
+  font-weight: 400;
+}
+
+.ct-mobile-card .btn {
+  margin: 0 var(--space-5) var(--space-5);
+  justify-content: center;
+}
+
+/* Hide mobile cards on desktop, hide table on mobile */
+.ct-wrap {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .ct-mobile {
+    display: none;
+  }
+  .ct-wrap {
+    display: block;
+  }
+}
+
 /* Comparison table */
 .ct-wrap {
   overflow-x: auto;
@@ -140,7 +286,7 @@
 /* Column headers */
 .ct-col-head {
   padding: var(--space-6) var(--space-5);
-  text-align: center;
+  text-align: left;
   height: 100%;
   box-sizing: border-box;
 }
@@ -153,6 +299,21 @@
 .ct-col-head--pro {
   background: #0f172a;
   border-left: 1px solid #0f172a;
+  position: relative;
+}
+
+.ct-popular-tag {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .ct-plan-name {

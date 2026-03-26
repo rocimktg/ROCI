@@ -4,6 +4,17 @@ Last updated: 2026-03-26
 
 
 =====================================
+NAV
+=====================================
+Rocinante Marketing
+Web Design
+Pricing
+About
+FAQ
+Schedule a Call
+
+
+=====================================
 INDEX.HTML — HOMEPAGE
 =====================================
 
@@ -104,13 +115,12 @@ Plans
 Choose Your Plan
 Straightforward pricing built for home service contractors. No setup fees, no surprises — choose the plan that's right for your business.
 
-Features | Foundation | Pro
-
 Foundation — $125/mo
-A 24/7 lead machine built from your real brand — capturing calls and form fills from local customers who are already searching for what you do. Built once, built right.
+A digital business card that works 24/7 — capturing calls and form fills from customers already searching for what you do. Built once, launched right, and left to run. Critical info corrections always included — content updates and ongoing changes are a Pro feature.
 
+Most Popular
 Pro — $175/mo
-Everything in Foundation, plus a dedicated partner who keeps your site current and your reputation growing — so you can focus on the job.
+Everything in Foundation — the leads, the calls, the form fills — plus a dedicated partner who keeps your site current and your reputation growing, so you can focus on the job.
 
 --- FEATURE COMPARISON ---
                               Foundation   Pro
@@ -209,7 +219,7 @@ I'm JJ Jaggers, owner and developer at Rocinante Marketing. I spent a decade at 
 
 What I noticed along the way was that local service businesses — the contractors, tradespeople, and small operators — rarely had access to that level of attention. Most were stuck with template sites, slow load times, and no one to call when something needed to change.
 
-Rocinante Marketing exists to fix that. We focus exclusively on home service contractors, building fast, custom, hand-coded websites. Choose the Foundation plan to get a professional, high-converting site up fast — or step up to Pro for a dedicated partner who handles updates, tracks your performance, and helps you turn every finished job into your next five-star review.
+Rocinante Marketing exists to fix that. We focus exclusively on home service contractors, building fast, custom, hand-coded websites. Choose the Foundation plan to get a finished, set-it-and-forget-it site that captures calls and leads around the clock — or step up to Pro for a dedicated partner who handles updates, tracks your performance, and helps you turn every finished job into your next five-star review.
 
 --- TEAM ---
 Our Team
@@ -242,21 +252,21 @@ Get clear answers to pricing, timelines, ownership, hosting, and support so you 
 Q: How do your website plans work?
 A: We offer two straightforward plans built for home service contractors. No setup fees — just a professional site that's ready to work from day one.
 
-The Foundation Plan ($125/mo): Built to get you professional and online, fast. This is for contractors who need a high-impact "digital sign" that looks great on a phone and tells customers you're the real deal. We handle the hosting, keep the site secure, and make sure your leads can actually call you and forms land in your inbox. 12-month agreement required.
+The Foundation Plan ($125/mo): Built to get you professional and online, fast. This is for contractors who need a high-impact digital presence that looks great on a phone, captures calls and form fills, and tells customers you're the real deal. We handle the hosting, keep the site secure, and make sure your leads can actually call you and forms land in your inbox. Foundation launches as a finished, stable site — critical info like your phone number or hours can always be corrected at no charge, but for ongoing content updates, Pro is the right fit. 12-month agreement required.
 
 The Pro Plan ($175/mo): Everything in Foundation, plus unlimited updates with 24-hour turnaround, direct access to the owner's cell so you can text photos straight from the job site, our custom Reputation Page to help you turn every finished job into a 5-star Google review, and a monthly insights report so you always know how your site is performing. 12-month agreement required.
 
 Q: Which plan is right for me?
-A: Both plans give you a fast, professional website with no setup fees and predictable flat-rate billing. Foundation is the right call if you need to get online quickly and keep overhead low. Pro is the better fit if you're actively growing and want a faster, more personal line of support — unlimited edits, direct cell access, and monthly reporting included.
+A: Both plans give you a fast, professional website with no setup fees and predictable flat-rate billing. Foundation is the right call if you need to get online quickly and keep overhead low — it launches as a finished site that captures leads around the clock and runs without ongoing changes. Pro is the better fit if you're actively growing and want a faster, more personal line of support — unlimited edits, direct cell access, and monthly reporting included.
 
 Q: What's the difference between Foundation and Pro?
-A: The biggest difference is your level of access and how fast things move. Foundation gives you a rock-solid, always-on website. Pro gives you direct access to the owner's cell number so you can text, send photos from the job site, and get updates turned around within 24 hours. You also get the Reputation Page, a monthly insights report, and instant lead notifications. If you're actively growing and want a faster, more personal line of communication, Pro is the better fit.
+A: Foundation is your permanent digital foundation — built right, launched, and left to run. Critical business info corrections are always covered. The biggest difference is your level of access and how fast things move. Pro gives you direct access to the owner's cell number so you can text, send photos from the job site, and get content updates turned around within 24 hours. You also get the Reputation Page, a monthly insights report, and instant lead notifications. If you're actively growing and want a faster, more personal line of communication, Pro is the better fit.
 
 Q: Can I upgrade from Foundation to Pro later?
 A: Yes, absolutely. You can upgrade at any time — no waiting period, no new agreement required. We'll add your Reputation Page, bump you to unlimited edits with 24-hour turnaround, and switch you to direct cell access the same day. Just reach out and we'll handle the rest.
 
 Q: Does Foundation include content updates?
-A: Content edits on Foundation are billed at $50/hr. Pro includes unlimited content edits with 24-hour turnaround — text updates, image swaps, hours, whatever you need.
+A: Foundation is a set-it-and-forget-it plan. During the build, we work together until everything is right — then it launches as a polished, permanent asset. If your core business info ever changes (phone number, hours, address), we'll update it at no charge. Content updates beyond that — new services, photos, copy changes — are what Pro is built for.
 
 Q: What is the Monthly Insights Report?
 A: Every month we send you a clean report showing how your site is performing — traffic, where visitors are coming from, what pages they're looking at, and how many leads came in. You stay informed without having to log in anywhere. Included with every Pro plan.
