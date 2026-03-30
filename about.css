@@ -147,3 +147,105 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.rocinante-story {
+  position: relative;
+  overflow: hidden;
+  background: #0f172a;
+  padding-top: 0;
+}
+
+.rocinante-story__wrap {
+  position: relative;
+  display: grid;
+  place-items: end center;
+  min-height: 560px;
+  padding-top: 0;
+  padding-bottom: var(--space-6);
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.rocinante-story__art {
+  position: absolute;
+  inset: 0;
+  background-image: url("/img/rocinante_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  opacity: 0.72;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+}
+
+.rocinante-story__card {
+  position: relative;
+  z-index: 1;
+  width: min(calc(100% - 2rem), 420px);
+  padding: 20px 22px 18px;
+  border-radius: 14px;
+  background: linear-gradient(160deg, rgba(15, 23, 42, 0.72) 0%, rgba(15, 23, 42, 0.88) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.15),
+    0 24px 48px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+.rocinante-story__card::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  border-radius: 2px;
+  margin: 0 auto 2px;
+}
+
+.rocinante-story h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.1rem, 0.8vw + 0.95rem, 1.35rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.rocinante-story .body {
+  margin: 0;
+  color: rgba(203, 213, 225, 0.9);
+  font-size: 0.84rem;
+  line-height: 1.6;
+  text-shadow: none;
+}
+
+.rocinante-story em {
+  font-style: italic;
+  color: #93c5fd;
+}
+
+@media (min-width: 860px) {
+  .rocinante-story__wrap {
+    min-height: 680px;
+    padding-bottom: var(--space-7);
+  }
+
+  .rocinante-story__art {
+    background-position: center top;
+    opacity: 0.78;
+  }
+
+  .rocinante-story__card {
+    width: min(calc(100% - 4rem), 440px);
+    padding: 22px 26px 20px;
+  }
+}

@@ -14,7 +14,7 @@
   align-items: flex-start;
   gap: var(--space-6);
   flex-wrap: wrap;
-  padding: var(--space-8);
+  padding: var(--space-6) var(--space-4);
   background: transparent;
   box-shadow: none;
   border: none;
@@ -89,6 +89,7 @@
     justify-content: space-between;
     align-items: center;
     gap: var(--space-6);
+    padding: var(--space-8);
   }
 
   .hero-band__col {

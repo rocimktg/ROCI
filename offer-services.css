@@ -57,5 +57,14 @@
 @media (min-width: 860px) {
   .offer-services__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+    align-items: start;
+  }
+  .offer-services__card {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    gap: 0;
+    row-gap: var(--space-3);
   }
 }

@@ -1,11 +1,11 @@
 ROCINANTE MARKETING — WEBSITE COPY
-====================================
-Last updated: 2026-03-26
+=================================
+Last updated: 2026-03-30
 
 
-=====================================
-NAV
-=====================================
+=================================
+GLOBAL NAVIGATION
+=================================
 Rocinante Marketing
 Web Design
 Pricing
@@ -14,9 +14,22 @@ FAQ
 Schedule a Call
 
 
-=====================================
+=================================
+GLOBAL FOOTER
+=================================
+Rocinante Marketing
+Web Design
+Pricing
+About
+FAQ
+Privacy Policy
+Schedule a Call
+© 2026 Rocinante Marketing, LLC
+
+
+=================================
 INDEX.HTML — HOMEPAGE
-=====================================
+=================================
 
 --- HERO ---
 Fast to launch. Built to last.
@@ -28,16 +41,27 @@ Built for: HVAC | Plumbing | Electrical | Roofing | And More
 
 --- SERVICE AREAS ---
 Serving
-Dallas · Fort Worth · Arlington · Hurst · Euless · Bedford
-Colleyville · Grapevine · North Richland Hills
+Dallas
+Fort Worth
+Arlington
+Hurst
+Euless
+Bedford
+Colleyville
+Grapevine
+North Richland Hills
 
 --- KEY OUTCOMES ---
 We Help Contractors Get:
-Calls · Jobs · Visibility · Trust
+Calls
+Jobs
+Visibility
+Trust
 
 We build home service websites that help customers find you, trust you, and contact you. Fast loading, easy to use, and built for local search — your website works in the background bringing in calls and jobs while you focus on the work.
 
 --- WHAT WE OFFER ---
+Your Web Partner
 What We Offer
 
 High-Performance Website + Hosting
@@ -57,7 +81,8 @@ See Plans & Pricing
 --- REPUTATION PAGE ---
 Reputation Page
 Pro Feature
-More Reviews. Less Effort. Built Right In.
+More Reviews. Less Effort.
+Built Right In.
 
 Most contractors finish a great job and never get the review. Not because the customer didn't want to leave one — because it was too many steps and they forgot.
 
@@ -65,7 +90,12 @@ The Reputation Page is a branded landing page at yourdomain.com/feedback. Send t
 
 View Demo
 
-Platforms: Google · Nextdoor · HomeAdvisor · Thumbtack · Yelp
+Platforms:
+Google
+Nextdoor
+HomeAdvisor
+Thumbtack
+Yelp
 
 --- WORK ---
 Work
@@ -88,24 +118,25 @@ Tree Ops Tree Service
 A bold, high-contrast site built for an Arlington tree service crew — vibrant and built to stand out, with a full service menu, before/after gallery, and emergency response front and center.
 View Site
 
---- BUILDING RELATIONSHIPS ---
+--- RELATIONSHIPS ---
 Building Relationships
 Why Clients Stay With Us
 Clear communication and dependable support keep your website working while you focus on running jobs.
 
 "JJ made the process straightforward from start to finish. The site is fast, easy for customers to understand, and updates are handled quickly. It has been reliable since launch."
-— CEO, FH Sign Company
+CEO, FH Sign Company
 
 Fast updates. Direct communication.
 Schedule a Call
 
 --- MOBILE CTA ---
-Request Service · Call Now
+Schedule a Call
+Call Now
 
 
-=====================================
+=================================
 PRICING.HTML
-=====================================
+=================================
 
 --- HERO ---
 Pricing
@@ -115,47 +146,61 @@ Plans
 Choose Your Plan
 Straightforward pricing built for home service contractors. No setup fees, no surprises — choose the plan that's right for your business.
 
-Foundation — $125/mo
+Foundation
+$125 /mo
 A digital business card that works 24/7 — capturing calls and form fills from customers already searching for what you do. Built once, launched right, and left to run. Critical info corrections always included — content updates and ongoing changes are a Pro feature.
 
 Most Popular
-Pro — $175/mo
+Pro
+$175 /mo
 Everything in Foundation — the leads, the calls, the form fills — plus a dedicated partner who keeps your site current and your reputation growing, so you can focus on the job.
 
 --- FEATURE COMPARISON ---
-                              Foundation   Pro
-Custom single-page website        ✓         ✓
-Lightning-fast build              ✓         ✓
-Mobile-first                      ✓         ✓
-Secure hosting & SSL              ✓         ✓
-Contact forms                     ✓         ✓
-Click-to-call                     ✓         ✓
-Basic local SEO setup             ✓         ✓
-Unlimited Edits                   —         ✓
-Reputation page                   —         ✓
-Instant lead notifications        —         ✓
-Monthly Insights Report           —         ✓
+Custom single-page website
+Lightning-fast build
+Mobile-first
+Secure hosting & SSL
+Contact forms
+Click-to-call
+Basic local SEO setup
+Unlimited Edits
+Reputation page
+Instant lead notifications
+Monthly Insights Report
 
-Schedule a Call (both plans)
+Foundation includes:
+Custom single-page website
+Lightning-fast build
+Mobile-first
+Secure hosting & SSL
+Contact forms
+Click-to-call
+Basic local SEO setup
 
---- À LA CARTE ---
-Add-Ons
-À La Carte
-Already on a plan? Add what you need.
+Pro includes:
+Custom single-page website
+Lightning-fast build
+Mobile-first
+Secure hosting & SSL
+Contact forms
+Click-to-call
+Basic local SEO setup
+Unlimited Edits
+Reputation page
+Instant lead notifications
+Monthly Insights Report
 
-Additional Pages — $100 each
-Add extra pages to your website beyond what's included in your plan. Each page can feature custom layouts, text, and images to expand your site's content and functionality.
-
-Blog — $750 one-time
-Add a blog to your site to share news, updates, or insights with your audience. Includes setup, design integration, and initial configuration so you can start posting right away.
+Schedule a Call
+Schedule a Call
 
 --- MOBILE CTA ---
-Request Service · Call Now
+Request Service
+Call Now
 
 
-=====================================
+=================================
 WEBDESIGN.HTML
-=====================================
+=================================
 
 --- HERO ---
 Web Design
@@ -165,52 +210,65 @@ Web Design
 Professional Web Design That Converts
 We build fast, hand-coded websites designed to make a strong first impression, earn trust, and turn visitors into customers. No templates. No WordPress. Just clean, reliable builds that work.
 
-Built to convert: Modern, lightning-fast sites that keep visitors engaged and drive real inquiries
-Rock-solid reliability: No plugins, no updates, no security patching, no downtime
-Works 24/7: Answers questions, captures leads, and books calls while you focus on running your business
+Built to convert
+Modern, lightning-fast sites that keep visitors engaged and drive real inquiries
+
+Rock-solid reliability
+No plugins, no updates, no security patching, no downtime
+
+Works 24/7
+Answers questions, captures leads, and books calls while you focus on running your business
 
 --- TESTIMONIAL ---
 "Our new site loads instantly and brings in better leads. Rocinante Marketing hand-coded everything — the difference was immediate."
-— CEO, FH Sign Company
+CEO, FH Sign Company
 
---- THE ROCINANTE PROCESS ---
+--- PROCESS ---
 The Rocinante Process
 From first call to ongoing care
 We keep the process simple, clear, and fast so you always know what is happening and what comes next.
 
-01 — Discovery Call
+01
+Discovery Call
 We start with a short call to learn about your business, goals, and what you want your website to do. No sales pitch, just a straightforward conversation to see if it is a good fit.
 
-02 — Transparent Proposal
+02
+Transparent Proposal
 After the call, you receive a clear proposal outlining exactly what is included, which plan fits your needs, and your monthly rate. No surprise fees, no jargon.
 
-03 — Design Approval
+03
+Design Approval
 We create an initial design direction for your site. You review layout, structure, and overall look before any build work moves forward, so everything is aligned from the start.
 
-04 — Your Site Comes to Life
+04
+Your Site Comes to Life
 Once approved, we design and hand-code your website. Everything is custom built, fast loading, and responsive across devices. No templates or WordPress.
 
-05 — Feedback Loop
+05
+Feedback Loop
 You preview the site and share feedback. We refine design, copy, and layout until everything feels right for your business and service area.
 
-06 — Launch Day
+06
+Launch Day
 We handle final setup and launch. Your site goes live fast, stable, and ready for customers to call or request service.
 
-Schedule a Call · View Pricing
+Schedule a Call
+View Pricing
 
 --- MOBILE CTA ---
-Request Service · Call Now
+Request Service
+Call Now
 
 
-=====================================
+=================================
 ABOUT.HTML
-=====================================
+=================================
 
 --- HERO ---
 About Us
 
 --- ABOUT ---
-Based in Bedford, TX — a suburb of Dallas/Fort Worth.
+Based in Bedford, TX - a suburb of Dallas/Fort Worth.
 
 About
 Websites Built With Purpose & Intent
@@ -221,23 +279,32 @@ What I noticed along the way was that local service businesses — the contracto
 
 Rocinante Marketing exists to fix that. We focus exclusively on home service contractors, building fast, custom, hand-coded websites. Choose the Foundation plan to get a finished, set-it-and-forget-it site that captures calls and leads around the clock — or step up to Pro for a dedicated partner who handles updates, tracks your performance, and helps you turn every finished job into your next five-star review.
 
---- TEAM ---
+--- OUR TEAM ---
 Our Team
 People behind the work
 
-JJ Jaggers — Owner, Design & Development
+JJ Jaggers
+Owner, Design & Development
 Leads strategy, design, and development for every project. Focused on clarity, performance, and building fast, custom websites for growing businesses.
 
-Katie Mitchell — Client Account Services
+Katie Mitchell
+Client Account Services
 Keeps projects organized and communication clear. Handles scheduling, client updates, and the details that make the process smooth from start to finish.
 
+--- WHAT IS ROCINANTE? ---
+What Is Rocinante?
+In every great story, the hero needs a workhorse. In Don Quixote, Rocinante was the faithful steed that carried a dreamer into battle. In The Expanse, the Rocinante is the salvaged ship that keeps a crew alive against all odds.
+
+At Rocinante Marketing, LLC, we build digital workhorses for contractors who serve their local communities. You need a platform that works as hard as you do — generating leads, capturing calls, and always showing up to push the boundaries of business.
+
 --- MOBILE CTA ---
-Request Service · Call Now
+Request Service
+Call Now
 
 
-=====================================
+=================================
 FAQ.HTML
-=====================================
+=================================
 
 --- HERO ---
 FAQ
@@ -248,75 +315,171 @@ FAQ for Rocinante Marketing
 Get clear answers to pricing, timelines, ownership, hosting, and support so you can decide if we're the right fit.
 
 --- FAQ ITEMS ---
+Q: How do your website plans work and what is the difference?
+A: We offer two straightforward plans built for home service contractors. No setup fees. Both plans include a direct line to the owner via text, email, or phone, and both offer a 2-business day turnaround on requests.
 
-Q: How do your website plans work?
-A: We offer two straightforward plans built for home service contractors. No setup fees — just a professional site that's ready to work from day one.
+The Foundation Plan ($125/mo): Built to get you professional and online, fast. This plan includes email lead notifications and covers corrections to your critical business info (phone, hours, address). It's perfect for a low-maintenance, high-impact digital presence. 12-month agreement required.
 
-The Foundation Plan ($125/mo): Built to get you professional and online, fast. This is for contractors who need a high-impact digital presence that looks great on a phone, captures calls and form fills, and tells customers you're the real deal. We handle the hosting, keep the site secure, and make sure your leads can actually call you and forms land in your inbox. Foundation launches as a finished, stable site — critical info like your phone number or hours can always be corrected at no charge, but for ongoing content updates, Pro is the right fit. 12-month agreement required.
-
-The Pro Plan ($175/mo): Everything in Foundation, plus unlimited updates with 24-hour turnaround, direct access to the owner's cell so you can text photos straight from the job site, our custom Reputation Page to help you turn every finished job into a 5-star Google review, and a monthly insights report so you always know how your site is performing. 12-month agreement required.
-
-Q: Which plan is right for me?
-A: Both plans give you a fast, professional website with no setup fees and predictable flat-rate billing. Foundation is the right call if you need to get online quickly and keep overhead low — it launches as a finished site that captures leads around the clock and runs without ongoing changes. Pro is the better fit if you're actively growing and want a faster, more personal line of support — unlimited edits, direct cell access, and monthly reporting included.
-
-Q: What's the difference between Foundation and Pro?
-A: Foundation is your permanent digital foundation — built right, launched, and left to run. Critical business info corrections are always covered. The biggest difference is your level of access and how fast things move. Pro gives you direct access to the owner's cell number so you can text, send photos from the job site, and get content updates turned around within 24 hours. You also get the Reputation Page, a monthly insights report, and instant lead notifications. If you're actively growing and want a faster, more personal line of communication, Pro is the better fit.
+The Pro Plan ($175/mo): Everything in Foundation, plus unlimited content updates (send us new job site photos or text changes anytime), our custom Reputation Page to boost reviews, monthly insights reports, SMS lead notifications, and covers corrections to your critical business info (phone, hours, address) within 2 business days. 12-month agreement required.
 
 Q: Can I upgrade from Foundation to Pro later?
-A: Yes, absolutely. You can upgrade at any time — no waiting period, no new agreement required. We'll add your Reputation Page, bump you to unlimited edits with 24-hour turnaround, and switch you to direct cell access the same day. Just reach out and we'll handle the rest.
+A: Yes, absolutely. You can upgrade at any time. We'll add your Reputation Page, switch you to unlimited content updates, and start your monthly reporting immediately. Your existing 12-month commitment remains in place.
 
-Q: Does Foundation include content updates?
-A: Foundation is a set-it-and-forget-it plan. During the build, we work together until everything is right — then it launches as a polished, permanent asset. If your core business info ever changes (phone number, hours, address), we'll update it at no charge. Content updates beyond that — new services, photos, copy changes — are what Pro is built for.
-
-Q: What is the Monthly Insights Report?
-A: Every month we send you a clean report showing how your site is performing — traffic, where visitors are coming from, what pages they're looking at, and how many leads came in. You stay informed without having to log in anywhere. Included with every Pro plan.
-
-Q: What kind of website do you build?
-A: Every site we build is a single-page, hand-coded static website — no WordPress, no templates, no page builders. Single-page doesn't mean simple. It means everything a visitor needs to call you, trust you, and book you is on one fast-loading, mobile-first page. No clicking around, no getting lost.
-
-Q: Why a single-page site instead of multiple pages?
-A: A single-page site showcases your services, reviews, photos, and contact info instantly. It loads faster, converts better on mobile, and is easier to maintain — a deliberate choice, not a shortcut.
-
-Q: Why don't you use WordPress or page builders?
-A: WordPress sites rely on plugins that break, require constant updates, and create security vulnerabilities. Page builders bloat your code and slow your site down. We hand-code everything from scratch — the result is a site that loads in under a second, never breaks on its own, and has nothing for hackers to exploit.
-
-Q: What is the Reputation Page? [Pro Feature]
-A: The Reputation Page is a simple feedback page built into every Pro site — accessible at your domain (e.g., yourbusiness.com/feedback). When a job is done, you send the customer a link. They land on a clean, mobile-friendly page where they can tap straight to Google, Nextdoor, HomeAdvisor, Thumbtack, or Yelp to leave a review. Included in the Pro Plan at no extra charge.
-
-Q: What do I need to provide to get started?
-A: Very little — that's the point. We do the heavy lifting upfront. We'll need your basic business info (services, hours, contact details), any existing brand assets like a logo, and access to your domain. If you don't have a domain we can help you get one. Most clients are surprised by how little we ask for.
-
-Q: Do I own my domain and content?
-A: Yes, always. Your domain, photography, and written content are yours permanently. If we purchase a domain on your behalf we transfer it to you upon request. You are never held hostage.
+Q: Do I own my website?
+A: We operate on a service-based rental model. You own all your content. Your domain, logo, photography, and written copy are yours permanently. The website itself (the custom code and hosting environment) is owned by Rocinante Marketing. If you choose to cancel after your 12-month term, we provide you with all your business content and transfer your domain to you within 5 business days.
 
 Q: What happens if I cancel my monthly plan?
-A: Your domain, photos, logo, and written content are always yours. The website itself runs on our infrastructure — if the subscription ends the site comes down, but everything that belongs to your brand comes with you. After your 12-month agreement your plan rolls month-to-month with no action required on your part.
+A: This agreement carries a 12-month minimum commitment. After that, your plan rolls month-to-month and can be canceled with 30 days' notice. Because the site runs on our proprietary infrastructure, the website goes offline if the subscription ends. However, your domain, photos, and text are always yours to take with you.
 
 Q: How does billing work?
-A: Your first payment is charged at project kickoff. Recurring billing begins automatically one month later through Stripe.
+A: No Setup Fees: Your first monthly payment is due at project kickoff to start the build.
+
+Automatic Billing: Recurring payments are handled automatically via Stripe on the same day each month.
+
+Price Lock: Your monthly rate is locked in for your initial 12-month term.
+
+Q: How fast will my site launch?
+A: Once we receive your initial payment and materials (logo, business info, etc.), we move fast. Our target launch timeline is within 10 business days.
+
+Q: Why a single-page site instead of multiple pages?
+A: A single-page site showcases your services, reviews, photos, and contact info instantly. It loads faster, converts better on mobile, and is easier to maintain, a deliberate choice to get your phone ringing, not a shortcut.
+
+Q: Why don't you use WordPress or page builders?
+A: WordPress sites rely on plugins that break and create security risks. Page builders bloat your code and slow your site down. We hand-code everything from scratch. The result is a site that loads in under a second, never breaks on its own, and has nothing for hackers to exploit.
+
+Q: What are Instant Lead Notifications? [Pro Feature]
+A: Every site we build delivers leads to your email address the second a customer hits "submit," regardless of your plan. For Pro Plan subscribers, we also set up SMS notifications. This sends a text message directly to your cell phone so you can follow up with potential customers immediately, even if you're away from your computer or out on a job site.
+
+Q: What is the Reputation Page? [Pro Feature]
+A: The Reputation Page is a simple feedback page built into every site we build — accessible at your domain (e.g., yourbusiness.com/feedback). When a job is done, you send the customer a link. They land on a clean, mobile-friendly page where they can leave feedback directly. It gives customers an easy way to share their experience, and gives you a private channel to hear from anyone who wasn't fully satisfied before it becomes a public issue. Included in the Pro Plan at no extra charge. See Demo.
 
 --- MOBILE CTA ---
-Request Service · Call Now
+Request Service
+Call Now
 
 
-=====================================
-FEEDBACK.HTML (DEMO — WAS CONSTRUCTION)
-=====================================
+=================================
+CONTACT.HTML
+=================================
 
+--- HERO ---
+Contact
+
+--- CONTACT SECTION ---
+Say Hey
+Ready for a Better Local Presence?
+Ask questions, schedule a call, or request a quote. Your website should do more than exist — it should bring you business.
+Schedule a Call
+
+--- CONTACT FORM ---
+First name
+Placeholder: Jane
+
+Last name
+Placeholder: Doe
+
+Email
+Placeholder: you@example.com
+
+Phone number
+Placeholder: (555) 123-4567
+
+Company name
+Placeholder: Your company
+
+Website URL
+Placeholder: https://yourdomain.com
+
+Message
+Placeholder: Tell us about your project, goals, or timeline.
+
+Submit
+
+--- MOBILE CTA ---
+Request Service
+Call Now
+
+
+=================================
+PRIVACY.HTML
+=================================
+
+Privacy Policy
+Rocinante Marketing, LLC
+Last updated: February 5, 2026
+
+1. Information We Collect
+We collect information you provide directly to us (such as name, email, phone number, company, and project details submitted through our contact forms), as well as technical data automatically collected when you visit our site (IP address, browser type, device identifiers, pages viewed, and referring URLs).
+
+2. How We Use Information
+We use your information to respond to inquiries, provide services, operate and improve our website, personalize content, communicate about updates, and maintain the security and integrity of our systems.
+
+3. SMS Communications
+If you provide your phone number and consent to receive text messages, Rocinante Marketing, LLC may send you SMS messages related to your inquiries, appointments, and customer support. Message frequency varies. Message and data rates may apply.
+
+You may opt out of SMS communications at any time by replying STOP to any message. You may reply HELP for assistance or contact us directly using the information below.
+
+SMS consent is not shared with third parties or affiliates for marketing purposes.
+
+4. Cookies and Tracking
+We may use cookies, pixels, and similar technologies to analyze site usage and improve performance. You can adjust your browser settings to refuse cookies; however, some features may not function properly.
+
+5. Sharing of Information
+We do not sell your personal information. We may share it with trusted service providers who assist with hosting, analytics, communications, or payment processing, subject to confidentiality obligations. We may also disclose information if required by law or to protect our rights and the security of our users. SMS consent is not shared with third parties or affiliates for marketing purposes.
+
+6. Data Retention
+We retain personal information only as long as necessary to fulfill the purposes described in this Policy, comply with legal obligations, resolve disputes, and enforce our agreements.
+
+7. Your Choices
+You may request access to, correction of, or deletion of your personal information by contacting us at the phone number below. You can opt out of non-essential communications by following unsubscribe instructions or contacting us directly. SMS recipients may opt out at any time by replying STOP.
+
+8. Data Security
+We use reasonable administrative, technical, and physical safeguards to protect personal information. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+
+9. Children's Privacy
+Our services are not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us information, please contact us to have it removed.
+
+10. International Visitors
+Our services are intended for users in the United States. If you access the site from other regions, you understand that your information may be processed in the United States where data protection laws may differ from those in your jurisdiction.
+
+11. Changes to This Policy
+We may update this Privacy Policy periodically. Material changes will be indicated by updating the "Last updated" date above. Continued use of the site after changes constitutes acceptance of the updated Policy.
+
+12. Contact Us
+If you have questions about this Privacy Policy or our practices, please contact Rocinante Marketing, LLC at (817) 518-4222 or through our contact page.
+
+
+=================================
+FEEDBACK.HTML — REVIEW DEMO PAGE
+=================================
+
+--- HEADER ---
+WAS
+CONSTRUCTION
 ← Back to Site
 
+--- HERO ---
 We appreciate your business
 How'd We Do?
 Your review helps homeowners across DFW find contractors they can actually trust. Takes 60 seconds.
 
-⭐⭐⭐⭐⭐
+--- REVIEW OPTIONS ---
+Google
+Most trusted · boosts local search ranking
 
-Google — Most trusted · boosts local search ranking
-Nextdoor — Recommend us to your neighbors
-HomeAdvisor — Top platform for home contractors
-Thumbtack — Help others find quality pros
-Yelp — Trusted local business reviews
+Nextdoor
+Recommend us to your neighbors
+
+HomeAdvisor
+Top platform for home contractors
+
+Thumbtack
+Help others find quality pros
+
+Yelp
+Trusted local business reviews
 
 Every review directly supports a small, family-owned DFW business. We read each one and appreciate you taking the time.
 
+--- FOOTER ---
 © 2025 WAS Construction And Roofing LLC · Irving, TX · wasconstructionroofing.com
