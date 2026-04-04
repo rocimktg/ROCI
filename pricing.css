@@ -111,8 +111,15 @@
   flex-direction: column;
 }
 
+.ct-mobile-card:first-child {
+  order: 2;
+}
+
 .ct-mobile-card--pro {
-  border-color: #0f172a;
+  border-color: #2563eb;
+  border-width: 2px;
+  order: 1;
+  box-shadow: 0 8px 36px rgba(37, 99, 235, 0.22);
 }
 
 .ct-mobile-card__head {
@@ -126,6 +133,7 @@
   background: #0f172a;
   border-bottom-color: #0f172a;
   position: relative;
+  border-top: 4px solid #2563eb;
 }
 
 .ct-mobile-card__name {
@@ -166,13 +174,13 @@
 
 .ct-mobile-card__desc {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .ct-mobile-card--pro .ct-mobile-card__desc {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 .ct-mobile-card__list {
@@ -300,6 +308,7 @@
   background: #0f172a;
   border-left: 1px solid #0f172a;
   position: relative;
+  border-top: 4px solid #2563eb;
 }
 
 .ct-popular-tag {
@@ -308,8 +317,8 @@
   right: var(--space-3);
   padding: 3px 10px;
   border-radius: 999px;
-  background: #ffffff;
-  color: #0f172a;
+  background: #2563eb;
+  color: #ffffff;
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -354,13 +363,13 @@
 
 .ct-plan-desc {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .ct-col-head--pro .ct-plan-desc {
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.78);
 }
 
 /* Feature rows */
@@ -395,10 +404,10 @@
 }
 
 .ct-cell--pro {
-  background: #f0f4ff;
+  background: #e8eeff;
   color: var(--ink);
-  border-left: 1px solid #e0e7ff;
-  border-bottom: 1px solid #e0e7ff;
+  border-left: 2px solid #c7d7fd;
+  border-bottom: 1px solid #c7d7fd;
 }
 
 .ct-row:last-of-type .ct-cell--pro {
@@ -433,9 +442,9 @@
 }
 
 .ct-col-foot--pro {
-  background: #f0f4ff;
-  border-left: 1px solid #e0e7ff;
-  border-top: 1px solid #e0e7ff;
+  background: #e8eeff;
+  border-left: 2px solid #c7d7fd;
+  border-top: 1px solid #c7d7fd;
 }
 
 .ct-col-foot .btn {
@@ -478,4 +487,3 @@
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   }
 }
-
