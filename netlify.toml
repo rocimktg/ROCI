@@ -1,4 +1,4 @@
 [build]
-# Static site: no Node build step needed.
-command = "echo \"Skipping build step\""
+command = "cd netlify/functions && npm install"
 publish = "."
+functions = "netlify/functions"
