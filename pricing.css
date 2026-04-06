@@ -357,14 +357,14 @@
     justify-content: stretch;
   }
 
-  /* Feature row dividers */
+  /* Feature row dividers — inset so they stay inside the thick card borders */
   .pt__monthly:not(.pt__head):not(.pt__cta-row) {
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: inset 0 -1px 0 rgba(255,255,255,0.1);
     padding: 12px 20px;
   }
 
   .pt__lump:not(.pt__head):not(.pt__cta-row) {
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
     padding: 12px 20px;
   }
 
