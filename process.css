@@ -1,5 +1,5 @@
 .process {
-  background: #f8fafc;
+  background: #ffffff;
 }
 
 .process__card {
@@ -130,7 +130,7 @@
 }
 
 .process--cards .process__step {
-  background: #f8fafc;
+  background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: var(--space-4);
