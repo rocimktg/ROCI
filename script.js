@@ -153,6 +153,48 @@
     }
   };
 
+  const initHeroCycle = () => {
+    const el = document.querySelector('.hero-cycle');
+    if (!el) return;
+
+    const words = ['Calls.', 'Jobs.', 'Reviews.'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let deleting = false;
+
+    const TYPE_SPEED   = 85;
+    const DELETE_SPEED = 50;
+    const PAUSE_FULL   = 2200;
+    const PAUSE_EMPTY  = 320;
+
+    const tick = () => {
+      const current = words[wordIndex];
+
+      if (deleting) {
+        charIndex--;
+        el.textContent = current.slice(0, charIndex);
+        if (charIndex === 0) {
+          deleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          setTimeout(tick, PAUSE_EMPTY);
+        } else {
+          setTimeout(tick, DELETE_SPEED);
+        }
+      } else {
+        charIndex++;
+        el.textContent = current.slice(0, charIndex);
+        if (charIndex === current.length) {
+          deleting = true;
+          setTimeout(tick, PAUSE_FULL);
+        } else {
+          setTimeout(tick, TYPE_SPEED);
+        }
+      }
+    };
+
+    tick();
+  };
+
   const run = () => {
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = String(new Date().getFullYear());
@@ -160,6 +202,7 @@
     initNav();
     initSmoothScroll();
     initFaq();
+    initHeroCycle();
   };
 
   const ready = window.partialsReady instanceof Promise ? window.partialsReady : Promise.resolve();

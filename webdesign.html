@@ -18,32 +18,29 @@
   <meta property="og:description" content="Professional web design for home service contractors. Fast, hand-coded websites built to convert visitors into calls. No templates, no WordPress, $0 down and $175 per month.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700;900&family=Barlow:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="webdesign.css">
-  <link rel="stylesheet" href="process.css">
+  <link rel="stylesheet" href="about.css">
   <script defer src="includes.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <div data-include="nav"></div>
   <main id="main">
-    <section class="webdesign-hero">
-      <div class="container webdesign-hero__inner">
-        <div class="webdesign-hero__copy">
-          <h1>Web Design</h1>
-        </div>
+    <section class="page-header">
+      <div class="container page-header__inner">
+        <h1>Web Design</h1>
       </div>
     </section>
 
-    <section class="section webdesign-overview" id="web-design-overview">
+    <section class="webdesign-overview" id="web-design-overview">
       <div class="container webdesign-overview__grid">
         <div class="webdesign-overview__copy">
-          <div class="work__intro">
-            <p class="eyebrow">Web Design</p>
-            <h2>Professional Web Design That Converts</h2>
-            <div class="work-divider" aria-hidden="true"></div>
+          <div class="section-intro webdesign-overview__intro">
+            <span class="eyebrow">Web Design</span>
+            <h2>Professional<br>Web Design.<br>Built To Convert.</h2>
             <p class="body">We build fast, hand-coded websites designed to make a strong first impression, earn trust, and turn visitors into customers. No templates. No WordPress. Just clean, reliable builds that work.</p>
           </div>
           <ul class="webdesign-overview__list">
@@ -68,66 +65,31 @@
       </div>
     </section>
 
-    <section class="section process process--cards" id="webdesign-process">
+    <section class="about-process section" aria-labelledby="process-heading">
       <div class="container">
-        <div class="process__card">
-          <div class="process__grid">
-            <div class="process__intro work__intro">
-              <p class="eyebrow">The Rocinante process</p>
-              <h2>From first call to ongoing care</h2>
-              <div class="work-divider" aria-hidden="true"></div>
-              <p class="body">We keep the process simple, clear, and fast so you always know what is happening and what comes next.</p>
-            </div>
+        <span class="eyebrow">How It Works</span>
+        <h2 id="process-heading">Three Steps.<br>No Surprises.</h2>
+        <div class="section-divider"></div>
+        <div class="process-steps">
 
-            <ol class="process__steps">
-              <li class="process__step">
-                <span class="process__number">01</span>
-                <div class="process__content">
-                  <h3>Discovery Call</h3>
-                  <p>We start with a short call to learn about your business, goals, and what you want your website to do. No sales pitch, just a straightforward conversation to see if it is a good fit.</p>
-                </div>
-              </li>
-              <li class="process__step">
-                <span class="process__number">02</span>
-                <div class="process__content">
-                  <h3>Transparent Proposal</h3>
-                  <p>After the call, you receive a clear proposal outlining exactly what is included, which plan fits your needs, and your monthly rate. No surprise fees, no jargon.</p>
-                </div>
-              </li>
-              <li class="process__step">
-                <span class="process__number">03</span>
-                <div class="process__content">
-                  <h3>Design Approval</h3>
-                  <p>We create an initial design direction for your site. You review layout, structure, and overall look before any build work moves forward, so everything is aligned from the start.</p>
-                </div>
-              </li>
-              <li class="process__step">
-                <span class="process__number">04</span>
-                <div class="process__content">
-                  <h3>Your Site Comes to Life</h3>
-                  <p>Once approved, we design and hand-code your website. Everything is custom built, fast loading, and responsive across devices. No templates or WordPress.</p>
-                </div>
-              </li>
-              <li class="process__step">
-                <span class="process__number">05</span>
-                <div class="process__content">
-                  <h3>Feedback Loop</h3>
-                  <p>You preview the site and share feedback. We refine design, copy, and layout until everything feels right for your business and service area.</p>
-                </div>
-              </li>
-              <li class="process__step">
-                <span class="process__number">06</span>
-                <div class="process__content">
-                  <h3>Launch Day</h3>
-                  <p>We handle final setup and launch. Your site goes live fast, stable, and ready for customers to call or request service.</p>
-                </div>
-              </li>
-            </ol>
-            <div class="process__cta">
-              <a class="btn primary" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
-              <a class="btn secondary" href="pricing.html">View Pricing</a>
-            </div>
+          <div class="process-step">
+            <span class="process-step__num">01</span>
+            <h3>We Talk</h3>
+            <p>A quick 15-minute call to make sure we're a fit. We'll cover your goals, your market, and what sets you apart from the competition.</p>
           </div>
+
+          <div class="process-step">
+            <span class="process-step__num">02</span>
+            <h3>You See Your Site</h3>
+            <p>Before you sign anything, you'll see a real, working mockup of your site — built for your business, not a generic template. No pitch decks. No mood boards. The actual thing.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step__num">03</span>
+            <h3>We Refine &amp; Launch</h3>
+            <p>Once you're on board, we dial in the details together. Then we handle the full technical setup and get you live — usually within 7–10 business days.</p>
+          </div>
+
         </div>
       </div>
     </section>

@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JNR2C0JMX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,13 +12,15 @@
   </script>
   <title>Web Design Pricing for Contractors | Rocinante Marketing</title>
   <meta name="description" content="Transparent web design pricing for home service contractors. Plans start at $175/mo. No hidden fees, no setup costs — everything you need to show up locally and get more calls.">
-  <meta name="keywords" content="contractor web design pricing, home service website cost, HVAC website pricing, plumbing website pricing, web design monthly plan, small business web design pricing, managed website services.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700;900&family=Barlow:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="pricing.css">
+
   <script defer src="includes.js"></script>
   <script defer src="script.js"></script>
 </head>
@@ -27,156 +28,109 @@
   <div data-include="nav"></div>
 
   <main id="main">
-    <section class="pricing-hero">
-      <div class="container pricing-hero__inner">
-        <div class="pricing-hero__copy">
-          <h1>Pricing</h1>
-        </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container page-header__inner">
+        <h1>Pricing</h1>
       </div>
     </section>
 
-    <section class="section pricing-plans" aria-labelledby="pricing-options">
+    <!-- PRICING PLANS -->
+    <section class="pricing-plans">
       <div class="container">
-        <div class="work__intro">
-          <p class="eyebrow">Plans</p>
-          <h2 id="pricing-options">Choose Your Plan</h2>
-          <div class="work-divider" aria-hidden="true"></div>
-          <p class="body">Straightforward pricing built for home service contractors. No setup fees, no surprises — choose the plan that's right for your business.</p>
-        </div>
 
-        <div class="ct-mobile">
-          <div class="ct-mobile-card">
-            <div class="ct-mobile-card__head">
-              <p class="ct-mobile-card__name">Lump Sum</p>
-              <p class="ct-mobile-card__price">$3,500</p>
-              <p class="ct-mobile-card__desc">A one-time build for contractors who want full ownership. Add hosting ($25/mo) and edits ($50/mo) as needed — or for $175/mo, the Monthly Plan covers all of it plus more.</p>
-            </div>
-            <ul class="ct-mobile-card__list">
-              <li class="ct-has">Custom single-page website</li>
-              <li class="ct-has">Lightning-fast build</li>
-              <li class="ct-has">Mobile-first</li>
-              <li class="ct-has">Contact forms</li>
-              <li class="ct-has">Click-to-call</li>
-              <li class="ct-has">Basic local SEO setup</li>
-              <li class="ct-has">Reputation page</li>
-              <li class="ct-has">Secure hosting &amp; SSL: $25/mo (optional)</li>
-              <li class="ct-has">Unlimited Edits: $50/mo (optional)</li>
-            </ul>
-            <a class="btn secondary" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
+        <span class="eyebrow">Pricing</span>
+        <h2>Simple Pricing.</h2>
+
+        <div class="pricing-table">
+
+          <!-- ── HEADER ROW ── -->
+          <div class="pt__cell pt__label pt__head">
+            <span class="pt__col-label">Feature</span>
           </div>
 
-          <div class="ct-mobile-card ct-mobile-card--pro">
-            <div class="ct-mobile-card__head">
-              <span class="ct-popular-tag">Most Popular</span>
-              <p class="ct-mobile-card__name">Monthly</p>
-              <p class="ct-mobile-card__price">$175 <span>/mo</span></p>
-              <p class="ct-mobile-card__desc">A full-time digital partner for less than most contractors spend on fuel in a week. We build it, run it, and grow it — you just answer the calls.</p>
-            </div>
-            <ul class="ct-mobile-card__list">
-              <li class="ct-has">Custom single-page website</li>
-              <li class="ct-has">Lightning-fast build</li>
-              <li class="ct-has">Mobile-first</li>
-              <li class="ct-has">Secure hosting &amp; SSL</li>
-              <li class="ct-has">Contact forms</li>
-              <li class="ct-has">Click-to-call</li>
-              <li class="ct-has">Basic local SEO setup</li>
-              <li class="ct-has">Reputation page</li>
-              <li class="ct-has">Unlimited Edits</li>
-              <li class="ct-has">Monthly Insights Report</li>
-            </ul>
-            <a class="btn primary" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
+          <div class="pt__cell pt__lump pt__head">
+            <p class="pt__name">Lump Sum</p>
+            <p class="pt__price">$3,500</p>
+            <p class="pt__pitch">A one-time build for contractors who want full ownership. Add hosting ($25/mo) and edits ($50/mo) as needed — or for $175/mo, the Monthly plan covers all of it plus more.</p>
           </div>
-        </div>
 
-        <div class="ct-wrap">
-          <div class="ct">
-            <div class="ct-header">
-              <div class="ct-spacer">
-                <p class="ct-plan-name">Feature</p>
-              </div>
-              <div class="ct-col-head">
-                <p class="ct-plan-name">Lump Sum</p>
-                <p class="ct-plan-price">$3,500</p>
-                <p class="ct-plan-desc">A one-time build for contractors who want full ownership. Add hosting ($25/mo) and edits ($50/mo) as needed — or for $175/mo, the Monthly Plan covers all of it plus more.</p>
-              </div>
-              <div class="ct-col-head ct-col-head--pro">
-                <span class="ct-popular-tag">Most Popular</span>
-                <p class="ct-plan-name">Monthly</p>
-                <p class="ct-plan-price">$175 <span>/mo</span></p>
-                <p class="ct-plan-desc">A full-time digital partner for less than most contractors spend on fuel in a week. We build it, run it, and grow it — you just answer the calls.</p>
-              </div>
-            </div>
-
-            <div class="ct-row">
-              <div class="ct-feature">Custom single-page website</div>
-              <div class="ct-cell ct-check" aria-label="Included">✓</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Lightning-fast build</div>
-              <div class="ct-cell ct-check" aria-label="Included">✓</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Mobile-first</div>
-              <div class="ct-cell ct-check" aria-label="Included">✓</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Contact forms</div>
-              <div class="ct-cell ct-check" aria-label="Included">✓</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Click-to-call</div>
-              <div class="ct-cell ct-check" aria-label="Included">✓</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Basic local SEO setup</div>
-              <div class="ct-cell ct-check" aria-label="Included">✓</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Reputation page</div>
-              <div class="ct-cell ct-check" aria-label="Included">✓</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Monthly Insights Report</div>
-              <div class="ct-cell ct-dash" aria-label="Not included">—</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Unlimited Edits</div>
-              <div class="ct-cell">$50/mo (optional)</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-            <div class="ct-row">
-              <div class="ct-feature">Secure hosting &amp; SSL</div>
-              <div class="ct-cell">$25/mo (optional)</div>
-              <div class="ct-cell ct-cell--pro ct-check" aria-label="Included">✓</div>
-            </div>
-
-            <div class="ct-footer">
-              <div class="ct-spacer"></div>
-              <div class="ct-col-foot">
-                <a class="btn secondary" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
-              </div>
-              <div class="ct-col-foot ct-col-foot--pro">
-                <a class="btn primary" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
-              </div>
-            </div>
+          <div class="pt__cell pt__monthly pt__head">
+            <span class="pt__badge">Most Popular</span>
+            <p class="pt__name">Monthly</p>
+            <p class="pt__price">$175<span>/mo</span></p>
+            <p class="pt__term">12-month agreement</p>
+            <p class="pt__pitch">A full-time digital partner for less than most contractors spend on fuel in a week. We build it, run it, and update it — you just answer the calls.</p>
           </div>
-        </div>
+
+          <!-- ── FEATURE ROWS ── -->
+          <div class="pt__cell pt__label">Custom single-page website</div>
+          <div class="pt__cell pt__lump"><span class="pt__check"></span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Unlimited edits</div>
+          <div class="pt__cell pt__lump"><span class="pt__addon">$50/mo (optional)</span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Secure hosting &amp; SSL</div>
+          <div class="pt__cell pt__lump"><span class="pt__addon">$25/mo (optional)</span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Lightning-fast build</div>
+          <div class="pt__cell pt__lump"><span class="pt__check"></span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Mobile-first</div>
+          <div class="pt__cell pt__lump"><span class="pt__check"></span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Contact forms</div>
+          <div class="pt__cell pt__lump"><span class="pt__check"></span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Click-to-call</div>
+          <div class="pt__cell pt__lump"><span class="pt__check"></span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Basic local SEO setup</div>
+          <div class="pt__cell pt__lump"><span class="pt__check"></span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Reputation page</div>
+          <div class="pt__cell pt__lump"><span class="pt__check"></span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">Monthly insights report</div>
+          <div class="pt__cell pt__lump"><span class="pt__dash">—</span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <div class="pt__cell pt__label">GMB Updates</div>
+          <div class="pt__cell pt__lump"><span class="pt__dash">—</span></div>
+          <div class="pt__cell pt__monthly"><span class="pt__check"></span></div>
+
+          <!-- ── CTA ROW ── -->
+          <div class="pt__cell pt__label pt__cta-row"></div>
+          <div class="pt__cell pt__lump pt__cta-row">
+            <a class="pt__cta pt__cta--outline" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
+          </div>
+          <div class="pt__cell pt__monthly pt__cta-row">
+            <a class="pt__cta pt__cta--acid" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
+          </div>
+
+        </div><!-- /pricing-table -->
+
+        <p class="pricing-disclaimer">* No hidden fees. Zero down to get started on the monthly plan.</p>
+
       </div>
     </section>
+
   </main>
 
   <div data-include="footer"></div>
 
   <div class="mobile-cta-bar">
-    <a class="btn primary" href="contact.html">Request Service</a>
+    <a class="btn acid" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
     <a class="btn secondary" href="tel:+18175184222">Call Now</a>
   </div>
 </body>

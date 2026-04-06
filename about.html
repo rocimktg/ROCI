@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JNR2C0JMX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,16 +11,18 @@
     gtag('config', 'G-8JNR2C0JMX');
   </script>
   <title>About Rocinante Marketing | Contractor Web Design in Bedford TX</title>
-  <meta name="description" content="Learn about Rocinante Marketing, a Bedford, Texas based web design studio building fast, call focused websites for HVAC, plumbing, electrical, and other home service contractors. Direct support, $0 down, $175 per month.">
-  <meta name="keywords" content="about Rocinante Marketing, contractor web design company, Bedford TX web design, Dallas Fort Worth contractor websites, home service web designer, HVAC web design Texas, plumbing website design Texas, small business web design agency.">
+  <meta name="description" content="Learn about Rocinante Marketing, a Bedford, Texas based web design studio building fast, call focused websites for contractors. Direct support, $0 down, $175 per month.">
   <meta property="og:title" content="About Rocinante Marketing | Contractor Web Design in Bedford TX">
-  <meta property="og:description" content="Learn about Rocinante Marketing, a Bedford, Texas based web design studio building fast, call focused websites for HVAC, plumbing, electrical, and other home service contractors. Direct support, $0 down, $175 per month.">
+  <meta property="og:description" content="Fast, hand-coded websites for home service contractors. Bedford, TX. $0 down, $175/mo.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700;900&family=Barlow:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="about.css">
+
   <script defer src="includes.js"></script>
   <script defer src="script.js"></script>
 </head>
@@ -29,78 +30,145 @@
   <div data-include="nav"></div>
 
   <main id="main">
-    <section class="about-hero">
-      <div class="container about-hero__inner">
-        <div class="about-hero__copy">
-          <h1>About Us</h1>
-        </div>
+
+    <!-- ═══════════════════════════════════════
+         PAGE HEADER
+    ═══════════════════════════════════════ -->
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container page-header__inner">
+        <h1 id="page-title">About Us</h1>
       </div>
     </section>
 
-    <section class="about-intro">
+    <!-- ═══════════════════════════════════════
+         INTRO
+    ═══════════════════════════════════════ -->
+    <section class="about-intro section" aria-labelledby="about-heading">
       <div class="container about-intro__grid">
-        <div>
+
+        <div class="about-intro__media">
           <figure class="about-figure">
-            <picture><source type="image/avif" srcset="/img/5OxeQcWS69-320.avif 320w, /img/5OxeQcWS69-640.avif 640w, /img/5OxeQcWS69-960.avif 960w, /img/5OxeQcWS69-1280.avif 1280w, /img/5OxeQcWS69-1600.avif 1600w" sizes="100vw"><source type="image/webp" srcset="/img/5OxeQcWS69-320.webp 320w, /img/5OxeQcWS69-640.webp 640w, /img/5OxeQcWS69-960.webp 960w, /img/5OxeQcWS69-1280.webp 1280w, /img/5OxeQcWS69-1600.webp 1600w" sizes="100vw"><img src="/img/5OxeQcWS69-320.jpeg" alt="Bedford, Texas skyline at dusk" loading="lazy" decoding="async" width="1600" height="2133" srcset="/img/5OxeQcWS69-320.jpeg 320w, /img/5OxeQcWS69-640.jpeg 640w, /img/5OxeQcWS69-960.jpeg 960w, /img/5OxeQcWS69-1280.jpeg 1280w, /img/5OxeQcWS69-1600.jpeg 1600w" sizes="100vw"></picture>
+            <picture>
+              <source type="image/avif" srcset="/img/5OxeQcWS69-320.avif 320w, /img/5OxeQcWS69-640.avif 640w, /img/5OxeQcWS69-960.avif 960w" sizes="(max-width: 860px) 100vw, 45vw">
+              <source type="image/webp" srcset="/img/5OxeQcWS69-320.webp 320w, /img/5OxeQcWS69-640.webp 640w, /img/5OxeQcWS69-960.webp 960w" sizes="(max-width: 860px) 100vw, 45vw">
+              <img src="/img/5OxeQcWS69-640.jpeg" alt="Bedford, Texas" loading="lazy" decoding="async" width="960" height="1280">
+            </picture>
+            <figcaption>Based in Bedford, TX — DFW Metroplex</figcaption>
           </figure>
-          <p class="about-caption">Based in Bedford, TX - a suburb of Dallas/Fort Worth.</p>
         </div>
-        <div class="about-content work__intro">
-          <p class="eyebrow">About</p>
-          <h2>Websites Built With Purpose &amp; Intent</h2>
-          <div class="work-divider" aria-hidden="true"></div>
-          <p class="body">I'm JJ Jaggers, owner and developer at Rocinante Marketing. I spent a decade at Federal Heath, a national sign manufacturer, working my way from Art Director to Digital Marketing Manager. In that time I rebuilt the company's digital footprint across five divisions, owned their advertising and lead generation strategy, and learned firsthand how visibility and execution drive results at scale.</p>
-          <p class="body">What I noticed along the way was that local service businesses — the contractors, tradespeople, and small operators — rarely had access to that level of attention. Most were stuck with template sites, slow load times, and no one to call when something needed to change.</p>
-          <p class="body">Rocinante Marketing exists to fix that. We focus exclusively on home service contractors, building fast, custom, hand-coded websites. For $175 a month with zero down, you get a dedicated partner who handles everything — updates, hosting, performance tracking — and helps you turn every finished job into your next five-star review.</p>
+
+        <div class="about-intro__content">
+          <span class="eyebrow">The Story</span>
+          <h2 id="about-heading">Websites Built With Purpose &amp; Intent</h2>
+          <div class="section-divider"></div>
+          <p>I'm JJ Jaggers, owner and developer at Rocinante Marketing. I spent a decade at Federal Heath, a national sign manufacturer, working my way from Art Director to Digital Marketing Manager. In that time I rebuilt the company's digital footprint across five divisions, owned their advertising and lead generation strategy, and learned firsthand how visibility and execution drive results at scale.</p>
+          <p>What I noticed along the way was that local service businesses — the contractors, tradespeople, and small operators — rarely had access to that level of attention. Most were stuck with template sites, slow load times, and no one to call when something needed to change.</p>
+          <p>Rocinante Marketing exists to fix that. We focus exclusively on home service contractors, building fast, custom, hand-coded websites. For $175 a month with zero down, you get a dedicated partner who handles everything — updates, hosting, performance tracking — and helps you turn every finished job into your next five-star review.</p>
         </div>
+
       </div>
     </section>
 
-    <section class="section offer about-team" id="team">
-      <div class="container offer-card offer-card--plain">
-        <div class="offer-content">
-          <p class="eyebrow">Our Team</p>
-          <h2>People behind the work</h2>
-          <div class="offer-divider" aria-hidden="true"></div>
-          <div class="team-grid">
-            <article class="card team-card">
-              <div class="team-photo">
-                <picture><source type="image/avif" srcset="/img/DE4Q1aReZV-320.avif 320w" sizes="100vw"><source type="image/webp" srcset="/img/DE4Q1aReZV-320.webp 320w" sizes="100vw"><img src="/img/DE4Q1aReZV-320.png" alt="Portrait of JJ Jaggers" loading="lazy" decoding="async" width="320" height="320"></picture>
-              </div>
-              <h3>JJ Jaggers</h3>
-              <p class="team-role">Owner, Design &amp; Development</p>
-              <p>Leads strategy, design, and development for every project. Focused on clarity, performance, and building fast, custom websites for growing businesses.</p>
-            </article>
+    <!-- ═══════════════════════════════════════
+         TEAM
+    ═══════════════════════════════════════ -->
+    <section class="about-team section" id="team" aria-labelledby="team-heading">
+      <div class="container">
+        <span class="eyebrow">The Team</span>
+        <h2 id="team-heading">People Behind the Work</h2>
+        <div class="section-divider"></div>
+        <div class="team-grid">
 
-            <article class="card team-card">
-              <div class="team-photo">
-                <picture><source type="image/avif" srcset="/img/cW8Nj8lJSB-320.avif 320w" sizes="100vw"><source type="image/webp" srcset="/img/cW8Nj8lJSB-320.webp 320w" sizes="100vw"><img src="/img/cW8Nj8lJSB-320.png" alt="Portrait of Katie Mitchell" loading="lazy" decoding="async" width="320" height="320"></picture>
-              </div>
+          <article class="team-card">
+            <div class="team-photo">
+              <picture>
+                <source type="image/avif" srcset="/img/DE4Q1aReZV-320.avif 320w" sizes="120px">
+                <source type="image/webp" srcset="/img/DE4Q1aReZV-320.webp 320w" sizes="120px">
+                <img src="/img/DE4Q1aReZV-320.png" alt="Portrait of JJ Jaggers" loading="lazy" decoding="async" width="320" height="320">
+              </picture>
+            </div>
+            <div class="team-card__content">
+              <h3>JJ Jaggers</h3>
+              <p class="team-role">Owner — Design &amp; Development</p>
+              <p>Leads strategy, design, and development for every project. Focused on clarity, performance, and building fast, custom websites for growing businesses.</p>
+            </div>
+          </article>
+
+          <article class="team-card">
+            <div class="team-photo">
+              <picture>
+                <source type="image/avif" srcset="/img/cW8Nj8lJSB-320.avif 320w" sizes="120px">
+                <source type="image/webp" srcset="/img/cW8Nj8lJSB-320.webp 320w" sizes="120px">
+                <img src="/img/cW8Nj8lJSB-320.png" alt="Portrait of Katie Mitchell" loading="lazy" decoding="async" width="320" height="320">
+              </picture>
+            </div>
+            <div class="team-card__content">
               <h3>Katie Mitchell</h3>
               <p class="team-role">Client Account Services</p>
               <p>Keeps projects organized and communication clear. Handles scheduling, client updates, and the details that make the process smooth from start to finish.</p>
-            </article>
-          </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section class="section rocinante-story" aria-labelledby="rocinante-story-heading">
-      <div class="container rocinante-story__wrap">
-        <div class="rocinante-story__art" aria-hidden="true"></div>
-        <div class="rocinante-story__card">
-          <h2 id="rocinante-story-heading">What Is Rocinante?</h2>
-          <p class="body">In every great story, the hero needs a workhorse. In <em>Don Quixote</em>, Rocinante was the faithful steed that carried a dreamer into battle. In <em>The Expanse</em>, the Rocinante is the salvaged ship that keeps a crew alive against all odds.</p>
-          <p class="body">At Rocinante Marketing, LLC, we build digital workhorses for contractors who serve their local communities. You need a platform that works as hard as you do — generating leads, capturing calls, and always showing up to push the boundaries of business.</p>
+    <!-- ═══════════════════════════════════════
+         PROCESS
+    ═══════════════════════════════════════ -->
+    <section class="about-process section" aria-labelledby="process-heading">
+      <div class="container">
+        <span class="eyebrow">How It Works</span>
+        <h2 id="process-heading">Three Steps.<br>No Surprises.</h2>
+        <div class="section-divider"></div>
+        <div class="process-steps">
+
+          <div class="process-step">
+            <span class="process-step__num">01</span>
+            <h3>We Talk</h3>
+            <p>A quick 15-minute call to make sure we're a fit. We'll cover your goals, your market, and what sets you apart from the competition.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step__num">02</span>
+            <h3>You See Your Site</h3>
+            <p>Before you sign anything, you'll see a real, working mockup of your site — built for your business, not a generic template. No pitch decks. No mood boards. The actual thing.</p>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step__num">03</span>
+            <h3>We Refine &amp; Launch</h3>
+            <p>Once you're on board, we dial in the details together. Then we handle the full technical setup and get you live — usually within 7–10 business days.</p>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- ═══════════════════════════════════════
+         ROCINANTE STORY
+    ═══════════════════════════════════════ -->
+    <section class="rocinante-story section" aria-labelledby="story-heading">
+      <div class="rocinante-story__art" aria-hidden="true"></div>
+      <div class="container rocinante-story__inner">
+
+        <div class="rocinante-story__content">
+          <span class="eyebrow eyebrow--white">The Name</span>
+          <h2 id="story-heading">What Is<br>Rocinante?</h2>
+          <div class="section-divider section-divider--white"></div>
+          <p>In every great story, the hero needs a workhorse. In <em>Don Quixote</em>, Rocinante was the faithful steed that carried a dreamer into battle. In <em>The Expanse</em>, the Rocinante is the salvaged ship that keeps a crew alive against all odds.</p>
+          <p>At Rocinante Marketing, we build digital workhorses for contractors who serve their local communities. You need a platform that works as hard as you do — generating leads, capturing calls, and always showing up.</p>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-    <div data-include="footer"></div>
+  <div data-include="footer"></div>
 
   <div class="mobile-cta-bar">
-    <a class="btn primary" href="contact.html">Request Service</a>
+    <a class="btn acid" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
     <a class="btn secondary" href="tel:+18175184222">Call Now</a>
   </div>
 </body>
