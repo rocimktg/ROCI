@@ -16,7 +16,7 @@
   <meta name="keywords" content="contact contractor web designer, web design consultation, home service web design contact, HVAC website designer contact, plumbing website design consultation, small business web design contact.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700;900&family=Barlow:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="contact.css">
@@ -27,22 +27,27 @@
   <div data-include="nav"></div>
 
   <main id="main">
-    <section class="contact-hero">
-      <div class="container contact-hero__inner">
-        <div class="contact-hero__copy">
-          <h1>Contact</h1>
-        </div>
+    <section class="page-header">
+      <div class="container page-header__inner">
+        <h1>Contact</h1>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section" aria-labelledby="contact-intro">
+    <section id="contact" class="contact-section" aria-labelledby="contact-intro">
       <div class="container contact-grid">
-        <div class="contact-copy work__intro">
-          <p class="eyebrow">Say Hey</p>
-          <h2 id="contact-intro">Ready for a Better Local Presence?</h2>
-          <div class="work-divider" aria-hidden="true"></div>
+        <div class="contact-copy">
+          <span class="contact-eyebrow">// SAY HEY</span>
+          <h2 id="contact-intro">Ready For A Better<br>Local Presence?</h2>
           <p class="body">Ask questions, schedule a call, or request a quote. Your website should do more than exist — it should bring you business.</p>
-          <a class="btn primary" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
+          <div class="contact-actions">
+            <a class="btn acid" href="https://calendly.com/jj-rocinantemarketing/30min" target="_blank" rel="noopener">Schedule a Call</a>
+            <a class="btn secondary" href="tel:+18175184222">Call Now</a>
+          </div>
+          <div class="contact-notes" aria-label="Contact details">
+            <p><strong>Fast Response</strong><span>Most replies go out within one business day.</span></p>
+            <p><strong>No Pressure</strong><span>Ask questions, get clarity, and decide from there.</span></p>
+            <p><strong>Built For Contractors</strong><span>Everything is tailored to home service businesses.</span></p>
+          </div>
         </div>
 
         <form class="contact-form" id="contact-form" method="POST" name="contact" data-netlify="true">
