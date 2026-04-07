@@ -130,6 +130,11 @@
   color: var(--black);
 }
 
+.faq-answer .faq-answer__emphasis {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 .faq-answer a {
   font-family: var(--font-mono);
   font-size: 0.8rem;

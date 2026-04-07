@@ -178,10 +178,10 @@
 
 .pt__term {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: rgba(255,255,255,0.5);
-  line-height: 1.05;
-  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
