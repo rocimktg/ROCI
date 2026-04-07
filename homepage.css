@@ -576,6 +576,7 @@
 .trust__photo-frame {
   position: relative;
   flex-shrink: 0;
+  padding-bottom: 80px;
 }
 
 .trust__photo-frame img {
@@ -588,7 +589,7 @@
 
 .trust__photo-tag {
   position: absolute;
-  bottom: 0;
+  bottom: 80px;
   right: 0;
   background: var(--black);
   color: var(--white);
@@ -599,6 +600,40 @@
   padding: 8px 14px;
   border-top: 2px solid rgba(255,255,255,0.3);
   border-left: 2px solid rgba(255,255,255,0.3);
+}
+
+/* Photo callout */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+.trust__photo-callout {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  animation: float 3.2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.trust__photo-callout-arrow {
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1;
+  display: block;
+}
+
+.trust__photo-callout-text {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  white-space: nowrap;
+  padding-left: 4px;
 }
 
 /* Trust content */
