@@ -573,9 +573,14 @@
 }
 
 /* Photo block — raw, bordered, no clipping */
+.trust__photo-col {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .trust__photo-frame {
   position: relative;
-  flex-shrink: 0;
 }
 
 .trust__photo-frame img {
