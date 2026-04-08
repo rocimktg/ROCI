@@ -345,14 +345,14 @@ p.body,
   border-color: var(--acid);
 }
 
-.footer-links h4,
-.footer-contact h4 {
+.footer-links h2,
+.footer-contact h2 {
   font-family: var(--font-condensed);
   font-weight: 900;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255,255,255,0.55);
   margin-bottom: var(--space-6);
 }
 
@@ -409,7 +409,7 @@ p.body,
 .footer-legal a {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.55);
   letter-spacing: 0.05em;
 }
 
