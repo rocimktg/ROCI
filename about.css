@@ -334,6 +334,10 @@
     gap: var(--space-9);
   }
 
+  .about-intro__content {
+    order: -1;
+  }
+
   .about-figure img {
     height: 360px;
   }
