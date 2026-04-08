@@ -4,13 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8JNR2C0JMX"></script>
+  <!-- Google Analytics — deferred until first interaction (or 5s fallback) -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-8JNR2C0JMX');
+    window.gtag = function(){ window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-8JNR2C0JMX');
+    (function() {
+      var loaded = false;
+      function loadGA() {
+        if (loaded) return;
+        loaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-8JNR2C0JMX';
+        document.head.appendChild(s);
+      }
+      var t = setTimeout(loadGA, 5000);
+      ['click', 'scroll', 'keydown', 'touchstart'].forEach(function(e) {
+        document.addEventListener(e, function() { clearTimeout(t); loadGA(); }, { once: true, passive: true });
+      });
+    })();
   </script>
 
   <title>Home Service Web Design for Contractors | Rocinante Marketing</title>
@@ -28,14 +42,7 @@
     imagesizes="(max-width: 960px) 100vw, 50vw"
     type="image/avif">
 
-  <!-- Fonts: Barlow Condensed (700/900) + Barlow (400/600) + Space Mono (400/700) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="nav.css">
-  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="main.css">
 
   <script defer src="includes.js"></script>
   <script defer src="script.js"></script>
