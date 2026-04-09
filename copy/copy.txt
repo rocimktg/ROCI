@@ -1,0 +1,515 @@
+ROCINANTE MARKETING — WEBSITE COPY
+=================================
+Last updated: 2026-04-09
+
+
+=================================
+GLOBAL NAVIGATION
+=================================
+
+Desktop:
+ROCINANTE
+MARKETING
+Home
+About
+Web Design
+Pricing
+FAQ
+Contact
+Schedule a Call
+
+Mobile panel:
+(817) 518-4222
+Home
+About
+Web Design
+Pricing
+FAQ
+Contact
+Schedule a Call
+
+
+=================================
+GLOBAL FOOTER
+=================================
+ROCINANTE
+MARKETING
+Home service websites built to get your phone ringing. Fast, hand-coded, and done right.
+Contact Us
+
+Quick Links
+Home
+About Us
+Web Design
+Pricing
+FAQ
+
+Contact
+(817) 518-4222
+Send a Message
+
+© 2026 Rocinante Marketing, LLC
+Privacy Policy
+
+
+=================================
+INDEX.HTML — HOMEPAGE
+=================================
+
+--- HERO ---
+Rocinante Marketing — Bedford, TX
+Home Service Websites That Get More [rotating words: Calls. | Jobs. | Reviews.]
+
+Industries:
+Roofers
+Glaziers
+Concrete
+Fence
+And More
+
+CTAs:
+Schedule a Call
+View Work
+
+Stats:
+$0 Down
+$175 Per Month
+<1s Load Time
+100% Hand-Coded
+
+--- SERVICES ---
+Your Web Partner
+What We Build
+
+High-Performance Website + Hosting
+A custom, hand-coded website built specifically for contractors — fast loading, mobile-first, and designed to turn visitors into calls. Includes secure hosting, SSL, and direct contact options. No templates, no page builders, no shortcuts.
+
+Mobile-First Design
+Most of your customers find you on a phone. We start mobile and work up — lean code, no bloat, fast everywhere. Your site works whether they're at the kitchen table or in a truck.
+
+Optimized Page Speed
+A site that takes 3 seconds to load loses half its visitors. Our sites load in under one second. Every visitor who clicks your link actually reaches it.
+
+Built to Convert
+Every button, form, and layout choice is made to guide visitors toward one action: calling you for an estimate. A website that doesn't get you jobs isn't doing its job.
+
+See Plans & Pricing
+
+--- REPUTATION PAGE SECTION ---
+Reputation Page
+More Reviews. Less Effort. Built-In.
+We build a custom review hub at yourdomain.com/feedback to make five-star ratings effortless.
+
+Zero Friction
+One link. One tap. No searching required.
+
+Boost Maps Rankings
+More 5-star reviews + a fast site = higher visibility in Local Maps.
+
+Total Profile Authority
+A 100% complete profile turns map views into service calls.
+
+View Demo
+
+Works with:
+Google
+Yelp
+Nextdoor
+Thumbtack
+HomeAdvisor
+
+--- WORK ---
+Our Work
+Recent Projects
+Real websites built for real trade contractors. Each one focused on clarity, speed, and turning visitors into calls.
+
+WAS Construction
+High-impact site for an Irving roofing crew — built to command attention and drive free estimate requests across DFW.
+Visit Site
+
+J&J Electric
+Clean, conversion-focused site for a family-owned DFW electrician — builds trust fast and turns visitors into estimate requests.
+Visit Site
+
+Federal Heath Sign Company
+Professional site for a national sign company — simplifies complex information and guides visitors to clear next steps.
+Visit Site
+
+Tree Ops Tree Service
+Bold, high-contrast site for an Arlington tree crew — full service menu, before/after gallery, and emergency response front and center.
+Visit Site
+
+--- TRUST ---
+Why Clients Stay
+Built on Straight Talk.
+Clear communication. Fast updates. Direct line to the person who built your site. No support tickets, no offshore handoffs. You call, I answer.
+
+"JJ made the process straightforward from start to finish. The site is fast, easy for customers to understand, and updates are handled quickly. It has been reliable since launch."
+CEO, FH Sign Company
+
+Schedule a Call
+
+
+=================================
+ABOUT.HTML
+=================================
+
+--- HEADER ---
+About Us
+
+--- INTRO ---
+Based in Bedford, TX — DFW Metroplex
+The Story
+Websites Built With Purpose & Intent
+
+I'm JJ Jaggers, owner and developer at Rocinante Marketing. I spent a decade at Federal Heath, a national sign manufacturer, working my way from Art Director to Digital Marketing Manager. In that time I rebuilt the company's digital footprint across five divisions, owned their advertising and lead generation strategy, and learned firsthand how visibility and execution drive results at scale.
+
+What I noticed along the way was that local service businesses — the contractors, tradespeople, and small operators — rarely had access to that level of attention. Most were stuck with template sites, slow load times, and no one to call when something needed to change.
+
+Rocinante Marketing helps home service contractors look professional online without adding extra work. We build fast, hand-coded websites designed to perform, not just sit there.
+
+We handle your online presence like a dedicated digital manager — keeping your site updated, managing your Google Business profile, and making sure everything runs smoothly.
+
+--- TEAM ---
+The Team
+People Behind the Work
+
+JJ Jaggers
+Owner — Design & Development
+Leads strategy, design, and development for every project. Focused on clarity, performance, and building fast, custom websites for growing businesses.
+
+Katie Mitchell
+Client Account Services
+Keeps projects organized and communication clear. Handles scheduling, client updates, and the details that make the process smooth from start to finish.
+
+--- PROCESS ---
+How It Works
+Three Steps. No Surprises.
+
+01 We Talk
+A quick 15-minute call to make sure we're a fit. We'll cover your goals, your market, and what sets you apart from the competition.
+
+02 You See Your Site
+Before you sign anything, you'll see a real, working mockup of your site — built for your business, not a generic template. No pitch decks. No mood boards. The actual thing.
+
+03 We Refine & Launch
+Once you're on board, we dial in the details together. Then we handle the full technical setup and get you live — usually within 7–10 business days.
+
+--- ROCINANTE STORY ---
+The Name
+What Is Rocinante?
+
+In every great story, the hero needs a workhorse. In Don Quixote, Rocinante was the faithful steed that carried a dreamer into battle. In The Expanse, the Rocinante is the salvaged ship that keeps a crew alive against all odds.
+
+At Rocinante Marketing, we build digital workhorses for contractors who serve their local communities. You need a platform that works as hard as you do — generating leads, capturing calls, and always showing up.
+
+
+=================================
+WEBDESIGN.HTML
+=================================
+
+--- HEADER ---
+Web Design
+
+--- OVERVIEW ---
+Web Design
+Professional Web Design. Built To Convert.
+We build fast, hand-coded websites designed to make a strong first impression, earn trust, and turn visitors into customers. No templates. No WordPress. Single-page or multi-page — just clean, reliable builds that work.
+
+Built to convert:
+Modern, lightning-fast sites that keep visitors engaged and drive real inquiries
+
+Rock-solid reliability:
+No plugins, no updates, no security patching, no downtime
+
+Works 24/7:
+Answers questions, captures leads, and books calls while you focus on running your business
+
+--- TESTIMONIAL ---
+Client testimonial
+"Our new site loads instantly and brings in better leads. Rocinante Marketing hand-coded everything — the difference was immediate."
+CEO, FH Sign Company
+
+--- PROCESS ---
+How It Works
+Three Steps. No Surprises.
+
+01 We Talk
+A quick 15-minute call to make sure we're a fit. We'll cover your goals, your market, and what sets you apart from the competition.
+
+02 You See Your Site
+Before you sign anything, you'll see a real, working mockup of your site — built for your business, not a generic template. No pitch decks. No mood boards. The actual thing.
+
+03 We Refine & Launch
+Once you're on board, we dial in the details together. Then we handle the full technical setup and get you live — usually within 7–10 business days.
+
+
+=================================
+PRICING.HTML
+=================================
+
+--- HEADER ---
+Pricing
+Simple Pricing.
+
+--- PLANS ---
+Lump Sum
+$3,500
+Up to 5 pages
+A one-time build for contractors who want full ownership. Includes your custom Reputation Page. Add hosting ($25/mo) and edits ($50/mo) as needed — or for $175/mo, the Monthly plan covers all of it plus more.
+
+Most Popular
+Monthly
+$175/mo
+12-month agreement
+Up to 5 pages
+A full-time digital partner for less than most contractors spend on fuel in a week. We build it, run it, and update it — you just answer the calls.
+
+--- FEATURE TABLE ---
+Custom website
+Unlimited edits
+Secure hosting & SSL
+Lightning-fast build
+Mobile-first
+Contact forms
+Click-to-call
+Local keyword optimization
+Reputation page
+Monthly insights report
+GMB Updates
+
+Schedule a Call
+
+* No setup fees. First monthly payment due at project kickoff.
+
+--- À LA CARTE ADD-ONS ---
+Add-Ons
+À La Carte Add-Ons
+Need More Pages?
+Additional pages are available at $100 each, one-time, regardless of which plan you're on. No limits, no package upgrades — just add what you need.
+
+
+=================================
+FAQ.HTML
+=================================
+
+--- HEADER ---
+FAQ
+Questions & Answers
+Straight Answers.
+Everything contractors ask before signing on.
+
+--- FAQ ITEMS ---
+How do your website plans work and what is the difference?
+Two plans. No setup fees.
+
+The Monthly Plan ($175/mo): Your site, fully managed. We build it, host it, keep it updated, and help your reputation grow. Includes unlimited edits, a custom Reputation Page, and a monthly insights report. 12-month agreement required.
+
+The Lump Sum ($3,500 one-time): A custom site built right and handed off to you. You own it completely. Host it yourself or add hosting ($25/mo) and unlimited edits ($50/mo) as needed.
+
+Do you build multi-page websites?
+Yes. We build both single-page and multi-page sites — the structure and pages are entirely up to you.
+
+For most contractors, a single-page site is the right call. Everything a visitor needs — services, reviews, photos, contact — is right there, fast and focused. It converts well on mobile and gets your phone ringing.
+
+If you'd rather have dedicated pages for whatever sections matter to your business, we build that too. Same hand-coded quality, same performance standards. We'll talk through what you want on the first call and build accordingly.
+
+Do I own my website?
+Short answer — it depends on how you want to work together.
+
+Monthly: Your content is fully portable — domain, logo, photography, and written copy are yours permanently. The website code and hosting environment are owned by Rocinante Marketing. If you cancel after your 12-month term, we transfer your domain and deliver all your business content within 5 business days.
+
+Lump Sum: You own the code and all files outright. We deliver everything you need to host it anywhere — your own hosting account, a provider of your choice, wherever you want. The site is yours to take and run independently.
+
+What happens if I cancel my monthly plan?
+The Monthly Plan starts with a 12-month commitment — after that, it's month-to-month with 30 days' notice. If you cancel, the site comes down since it runs on our infrastructure. But your domain, photos, and copy are always yours to take with you.
+
+How does billing work?
+No Setup Fees: Your first monthly payment is due at project kickoff to start the build.
+Automatic Billing: Recurring payments are handled automatically via Stripe on the same day each month.
+Price Lock: Your monthly rate is locked in for your initial 12-month term.
+
+What do you need from me to get started?
+Not much. Once you're ready to move forward, we'll need your logo, a few photos of your work, and basic business info — services, service area, contact details. If you don't have professional photos yet, we'll work with what you have. We handle everything else from there.
+
+Can you write the copy for my site?
+Yes. You don't need to write a word. We'll pull what we need from our kickoff call — your services, your market, what makes you different — and write copy that sounds like a real contractor, not a template.
+
+What happens if I need changes after launch on the Lump Sum plan?
+The Lump Sum is a one-time build — edits aren't included by default. If you need ongoing updates, you can add our edits package for $50/mo, which covers unlimited changes. Note that the edits package requires hosting through Rocinante Marketing ($25/mo). Or if you'd rather have the full managed experience, the Monthly plan at $175/mo includes everything — edits, hosting, GMB management, and more.
+
+How fast will my site launch?
+Once we have your payment and materials — logo, business info, photos — we get to work. Most sites are live within 7–10 business days.
+
+Can I add more than 5 pages?
+Yes. Additional pages are $100 each, one-time, regardless of which plan you're on. No package changes required — just let us know what you need.
+
+Why don't you use WordPress or page builders?
+WordPress sites rely on plugins that break and create security risks. Page builders bloat your code and slow your site down. We hand-code everything from scratch. The result is a site that loads in under a second, never breaks on its own, and has nothing for hackers to exploit.
+
+What is the Reputation Page?
+The Reputation Page is a simple feedback page built into every site we build — accessible at your domain (e.g., yourbusiness.com/feedback). When a job is done, you send the customer a link. They land on a clean, mobile-friendly page where they can leave feedback directly. It gives customers an easy way to share their experience, and gives you a private channel to catch any issues before they go public. Included in both plans. See Demo.
+
+Do you manage Google Business profiles?
+Yes, and it's included in the Monthly plan. We start with a full audit to make sure your profile is complete and accurate, then keep it active — adding photos and updates from jobs you send us via text or email. A complete, active profile ranks higher in local search and turns more map views into calls.
+
+
+=================================
+CONTACT.HTML
+=================================
+
+--- HEADER ---
+Contact
+
+--- INTRO ---
+// SAY HEY
+Ready For A Better Local Presence?
+Ask questions, schedule a call, or request a quote. Your website should do more than exist — it should bring you business.
+
+CTAs:
+Schedule a Call
+Call Now
+
+Contact notes:
+Fast Response
+Most replies go out within one business day.
+
+No Pressure
+Ask questions, get clarity, and decide from there.
+
+Built For Contractors
+Everything is tailored to home service businesses.
+
+--- FORM LABELS / PLACEHOLDERS ---
+First name
+Jane
+
+Last name
+Doe
+
+Email
+you@example.com
+
+Phone number
+(555) 123-4567
+
+Company name
+Your company
+
+Website URL
+https://yourdomain.com
+
+Message
+Tell us about your project, goals, or timeline.
+
+Submit
+
+
+=================================
+PRIVACY.HTML
+=================================
+
+--- HEADER ---
+Privacy Policy
+Rocinante Marketing, LLC
+Last updated: February 5, 2026
+
+--- POLICY ---
+1. Information We Collect
+We collect information you provide directly to us (such as name, email, phone number, company, and project details submitted through our contact forms), as well as technical data automatically collected when you visit our site (IP address, browser type, device identifiers, pages viewed, and referring URLs).
+
+2. How We Use Information
+We use your information to respond to inquiries, provide services, operate and improve our website, personalize content, communicate about updates, and maintain the security and integrity of our systems.
+
+3. SMS Communications
+If you provide your phone number and consent to receive text messages, Rocinante Marketing, LLC may send you SMS messages related to your inquiries, appointments, and customer support. Message frequency varies. Message and data rates may apply.
+
+You may opt out of SMS communications at any time by replying STOP to any message. You may reply HELP for assistance or contact us directly using the information below.
+
+SMS consent is not shared with third parties or affiliates for marketing purposes.
+
+4. Cookies and Tracking
+We may use cookies, pixels, and similar technologies to analyze site usage and improve performance. You can adjust your browser settings to refuse cookies; however, some features may not function properly.
+
+5. Sharing of Information
+We do not sell your personal information. We may share it with trusted service providers who assist with hosting, analytics, communications, or payment processing, subject to confidentiality obligations. We may also disclose information if required by law or to protect our rights and the security of our users. SMS consent is not shared with third parties or affiliates for marketing purposes.
+
+6. Data Retention
+We retain personal information only as long as necessary to fulfill the purposes described in this Policy, comply with legal obligations, resolve disputes, and enforce our agreements.
+
+7. Your Choices
+You may request access to, correction of, or deletion of your personal information by contacting us at the phone number below. You can opt out of non-essential communications by following unsubscribe instructions or contacting us directly. SMS recipients may opt out at any time by replying STOP.
+
+8. Data Security
+We use reasonable administrative, technical, and physical safeguards to protect personal information. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+
+9. Children's Privacy
+Our services are not directed to children under 13, and we do not knowingly collect personal information from them. If you believe a child has provided us information, please contact us to have it removed.
+
+10. International Visitors
+Our services are intended for users in the United States. If you access the site from other regions, you understand that your information may be processed in the United States where data protection laws may differ from those in your jurisdiction.
+
+11. Changes to This Policy
+We may update this Privacy Policy periodically. Material changes will be indicated by updating the “Last updated” date above. Continued use of the site after changes constitutes acceptance of the updated Policy.
+
+12. Contact Us
+If you have questions about this Privacy Policy or our practices, please contact Rocinante Marketing, LLC at (817) 518-4222 or through our contact page.
+
+
+=================================
+404.HTML
+=================================
+Error 404
+Page Not Found
+The page you were trying to reach does not exist or has moved. Use the links below to get back to the main site.
+
+Back Home
+Contact
+About
+Web Design
+Pricing
+FAQ
+
+Mobile CTA:
+Back Home
+Call Now
+
+
+=================================
+FEEDBACK/INDEX.HTML
+=================================
+Note: Publicly accessible from the site, though marked noindex/nofollow.
+
+--- HEADER / HERO ---
+Site
+WAS Construction & Roofing
+How'd we do?
+Every review supports our local business. It takes just 60 seconds to help us grow!
+
+--- PLATFORM PROMPT ---
+Choose a platform
+
+Google
+Most trusted · helps local search ranking
+
+Nextdoor
+Recommend us to your neighbors
+
+HomeAdvisor
+Top platform for home service pros
+
+Thumbtack
+Help others find quality pros
+
+Yelp
+Trusted local business reviews
+
+--- DIRECT CONTACT ---
+Not 100% satisfied?
+Text the owner directly so we can make it right.
+
+--- FOOTER NOTE ---
+Every review supports a small, family-owned DFW business.
+We read each one and truly appreciate your time.
+
+© 2026 WAS Construction And Roofing LLC · wasconstructionroofing.com

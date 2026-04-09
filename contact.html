@@ -115,55 +115,14 @@
             </div>
           </div>
 
-          <!-- <label class="form-optin">
-            <input id="sms-opt-in" type="checkbox" name="opt-in" value="yes">
-            <span>I agree to receive text messages from Rocinante Marketing, LLC related to my inquiry and appointments. Message frequency varies. Message and data rates may apply.</span>
-          </label> -->
           <div>
             <button class="btn primary" type="submit">Submit</button>
           </div>
-          <!-- <p class="form-footer">Reply STOP to unsubscribe or HELP for assistance. View our <a href="privacy.html">Privacy Policy</a>.</p> -->
         </form>
       </div>
     </section>
   </main>
 
-    <div data-include="footer"></div>
-  <!--
-
-  <div class="mobile-cta-bar">
-    <a class="btn primary" href="#contact">Request Service</a>
-    <a class="btn secondary" href="tel:+18175184222">Call Now</a>
-  </div>
-  -->
-
-  <script>
-    (() => {
-      const form = document.getElementById('contact-form');
-      const phone = document.getElementById('phone');
-      const optIn = document.getElementById('sms-opt-in');
-
-      if (!form || !phone || !optIn) return;
-
-      const clearValidity = () => optIn.setCustomValidity('');
-      optIn.addEventListener('change', clearValidity);
-
-      form.addEventListener('submit', (e) => {
-        const phoneFilled = phone.value.trim().length > 0;
-        if (phoneFilled) {
-          optIn.required = true;
-          if (!optIn.checked) {
-            optIn.setCustomValidity('Please consent to receive texts if you would like SMS updates.');
-            optIn.reportValidity();
-            e.preventDefault();
-            return;
-          }
-        } else {
-          optIn.required = false;
-          clearValidity();
-        }
-      });
-    })();
-  </script>
+  <div data-include="footer"></div>
 </body>
 </html>

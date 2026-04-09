@@ -186,6 +186,20 @@
   margin-bottom: 14px;
 }
 
+.pt__subline {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.58);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.pt__monthly .pt__subline {
+  color: rgba(255,255,255,0.78);
+}
+
 .pt__pitch {
   font-size: 0.9rem;
   line-height: 1.2;
@@ -291,6 +305,33 @@
   color: #aaa;
   letter-spacing: 0.08em;
   margin-top: var(--space-6);
+}
+
+.pricing-addons {
+  max-width: 720px;
+  margin-top: var(--space-9);
+  padding-top: var(--space-7);
+  border-top: 1px solid rgba(0,0,0,0.18);
+}
+
+.pricing-addons h3 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1;
+  margin-bottom: var(--space-4);
+}
+
+.pricing-addons__lead {
+  font-family: var(--font-condensed);
+  font-size: 1.15rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-2);
+}
+
+.pricing-addons p:last-child {
+  max-width: 62ch;
+  color: #444;
 }
 
 /* ─── MOBILE LABEL (hidden on desktop) ──────── */
