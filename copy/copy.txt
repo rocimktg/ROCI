@@ -404,6 +404,9 @@ Tell us about your project, goals, or timeline.
 
 Submit
 
+Confirmation message
+Thanks. We'll get back to you within one business day.
+
 
 =================================
 PRIVACY.HTML

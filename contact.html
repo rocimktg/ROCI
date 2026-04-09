@@ -75,6 +75,7 @@
         </div>
 
         <form class="contact-form" id="contact-form" method="POST" name="contact" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
           <div class="form-grid">
             <div>
               <label for="first-name">First name</label>
@@ -104,7 +105,7 @@
             </div>
             <div>
               <label for="website">Website URL</label>
-              <input type="url" id="website" name="website" placeholder="https://yourdomain.com">
+              <input type="text" id="website" name="website" placeholder="https://yourdomain.com" inputmode="url" autocapitalize="off" spellcheck="false">
             </div>
           </div>
 
@@ -118,11 +119,55 @@
           <div>
             <button class="btn primary" type="submit">Submit</button>
           </div>
+          <p class="contact-form__status" id="contact-form-status" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
     </section>
   </main>
 
   <div data-include="footer"></div>
+  <script>
+    (() => {
+      const form = document.getElementById('contact-form');
+      const status = document.getElementById('contact-form-status');
+      const submitButton = form?.querySelector('button[type="submit"]');
+
+      if (!form || !status || !submitButton) return;
+
+      const setStatus = (message, tone) => {
+        status.textContent = message;
+        status.className = `contact-form__status contact-form__status--${tone}`;
+        status.hidden = false;
+      };
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        if (!form.reportValidity()) return;
+
+        submitButton.disabled = true;
+        status.hidden = true;
+
+        try {
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams(new FormData(form)).toString(),
+          });
+
+          if (!response.ok) throw new Error('Submission failed');
+
+          form.reset();
+          setStatus("Thanks. We'll get back to you within one business day.", 'success');
+        } catch (error) {
+          setStatus('Something went wrong. Please call or email us and we will help directly.', 'error');
+        } finally {
+          submitButton.disabled = false;
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
