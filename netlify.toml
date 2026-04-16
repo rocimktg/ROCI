@@ -3,6 +3,36 @@ command = "cd netlify/functions && npm install"
 publish = "."
 functions = "netlify/functions"
 
+[[redirects]]
+  from = "/whychooseus"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/whychooseus/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/process"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/process/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/relationships"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/relationships/*"
+  to = "/"
+  status = 301
+
 # ── Compression ──────────────────────────────────
 [[headers]]
   for = "/*"

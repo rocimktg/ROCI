@@ -279,12 +279,84 @@ p.body,
   }
 }
 
+/* ─── BUILT FOR TREE SERVICE STRIP ──────────── */
+
+.tree-features {
+  background: var(--black);
+  border-bottom: var(--border);
+  padding: var(--space-9) 0;
+}
+
+.tree-features__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
+}
+
+.tree-features__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.tree-features__item svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--acid);
+  flex-shrink: 0;
+}
+
+.tree-features__item strong {
+  font-family: var(--font-condensed);
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  line-height: 1;
+}
+
+.tree-features__item span {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(255,255,255,0.6);
+}
+
+@media (max-width: 860px) {
+  .tree-features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tree-features__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ─── FOOTER ─────────────────────────────────── */
 
 .site-footer {
-  background: var(--black);
+  position: relative;
   color: var(--white);
   border-top: var(--border);
+  background-image: url('/img/gear.jpg');
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.72);
+  z-index: 0;
+}
+
+.footer-top,
+.footer-bottom {
+  position: relative;
+  z-index: 1;
 }
 
 .footer-top {
@@ -311,6 +383,7 @@ p.body,
 
 .footer-brand .nav__brandSub {
   color: rgba(255,255,255,0.5);
+  letter-spacing: 0.11em;
 }
 
 .footer-brand .nav__divider {

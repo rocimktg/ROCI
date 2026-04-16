@@ -53,7 +53,7 @@
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.6);
   margin-top: var(--space-3);
 }
 
@@ -61,6 +61,15 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-5);
+}
+
+/* Cancel the utility margins that double up with flex gap */
+.about-intro__content .eyebrow {
+  margin-bottom: 0;
+}
+
+.about-intro__content .section-divider {
+  margin: 0;
 }
 
 .about-intro__content h2 {
