@@ -31,15 +31,6 @@
   border-bottom: var(--border);
 }
 
-.pricing-eyebrow {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  color: rgba(0,0,0,0.6);
-  margin-bottom: var(--space-4);
-}
-
 .pricing-plans h2 {
   font-size: clamp(2.5rem, 4vw, 4.5rem);
   line-height: 0.95;
@@ -49,9 +40,19 @@
 .pricing-plans__note {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.5);
   letter-spacing: 0.04em;
-  margin-bottom: var(--space-9);
+  margin-bottom: var(--space-4);
+}
+
+.pricing-guarantee {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--black);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
 }
 
 /* ─── COMPARISON TABLE GRID ──────────────────── */
@@ -69,13 +70,10 @@
 
 .pt__cell {
   padding: 10px 28px;
-  border-bottom: 1px solid rgba(0,0,0,0.12);
+  border-bottom: 1px solid rgba(0,0,0,0.22);
   display: flex;
   align-items: center;
 }
-
-
-/* ─── COLUMN STYLES ──────────────────────────── */
 
 /* Left label column */
 .pt__label {
@@ -86,23 +84,30 @@
   letter-spacing: 0.04em;
   color: var(--black);
   line-height: 0.9;
-  border-right: 1px solid rgba(0,0,0,0.12);
+  border-right: 1px solid rgba(0,0,0,0.22);
   justify-content: flex-end;
   text-align: right;
 }
 
+.pt__label--sub {
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  line-height: 1.1;
+}
+
 /* Lite plan column */
 .pt__lite {
-  border-right: 1px solid rgba(0,0,0,0.12);
+  border-right: 1px solid rgba(0,0,0,0.22);
   justify-content: center;
 }
 
-/* Growth plan column (featured — light mint tint) */
+/* Growth plan column (featured — light green tint) */
 .pt__growth {
   justify-content: center;
-  background: #f5fdf5;
-  border-bottom-color: rgba(0,0,0,0.12);
-  border-right: 1px solid rgba(0,0,0,0.12);
+  background: #f2f2f2;
+  border-bottom-color: rgba(0,0,0,0.22);
+  border-right: 1px solid rgba(0,0,0,0.22);
 }
 
 /* Pro plan column */
@@ -122,7 +127,7 @@
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #666;
+  color: #aaa;
 }
 
 .pt__lite.pt__head,
@@ -132,14 +137,13 @@
   align-items: flex-start;
 }
 
-/* Growth header — lime accent bar at top, light mint background */
 .pt__growth.pt__head {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  background: #f5fdf5;
+  background: #f2f2f2;
   position: relative;
-  border-top: 4px solid var(--acid);
+  box-shadow: inset 0 4px 0 var(--acid);
 }
 
 .pt__badge {
@@ -162,7 +166,7 @@
 .pt__name {
   font-family: var(--font-condensed);
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   line-height: 1;
@@ -173,26 +177,26 @@
 .pt__price {
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 3.25rem;
+  font-size: 3rem;
   color: var(--black);
   line-height: 1;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .pt__price span {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0,0,0,0.4);
 }
 
 .pt__term {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: rgba(0,0,0,0.6);
-  line-height: 1.3;
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.58);
+  line-height: 1.2;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 }
 
 .pt__subline {
@@ -205,20 +209,19 @@
   margin-bottom: 14px;
 }
 
-.pt__pitch {
+.pt__tagline {
   font-size: 0.9rem;
-  line-height: 1.25;
+  line-height: 1.2;
   color: #555;
   margin-top: 10px;
 }
 
 /* ─── CHECKMARKS & INDICATORS ────────────────── */
 
-/* Consistent slate grey checks across all columns */
 .pt__check {
   font-size: 1.3rem;
   font-weight: 900;
-  color: #64748b;
+  color: var(--black);
   line-height: 1;
 }
 
@@ -226,10 +229,14 @@
   content: '✔';
 }
 
+.pt__growth .pt__check {
+  color: var(--black);
+}
+
 .pt__dash {
   font-family: var(--font-mono);
   font-size: 0.9rem;
-  color: rgba(0,0,0,0.6);
+  color: var(--black);
 }
 
 .pt__text {
@@ -238,7 +245,31 @@
   font-weight: 700;
   color: #555;
   text-align: center;
-  line-height: 1.05;
+  line-height: 1.2;
+}
+
+.pt__subtext {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: rgba(0,0,0,0.55);
+  letter-spacing: 0.03em;
+}
+
+/* ─── SUBLABELS ──────────────────────────────── */
+
+.pt__sublabel {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: rgba(0,0,0,0.55);
+  letter-spacing: 0.03em;
+  text-transform: none;
+  line-height: 1.3;
+  margin-top: 3px;
+  text-align: right;
 }
 
 /* ─── CTA ROW ────────────────────────────────── */
@@ -246,21 +277,20 @@
 .pt__cta-row {
   border-bottom: none;
   padding: 24px 28px;
-  background: var(--white) !important; /* reset zebra on CTA row */
-}
-
-.pt__growth.pt__cta-row {
-  background: #f5fdf5 !important;
 }
 
 .pt__label.pt__cta-row {
-  border-right: 1px solid rgba(0,0,0,0.12);
+  border-right: 1px solid rgba(0,0,0,0.22);
 }
 
 .pt__lite.pt__cta-row,
 .pt__growth.pt__cta-row,
 .pt__pro.pt__cta-row {
   justify-content: center;
+}
+
+.pt__growth.pt__cta-row {
+  background: #f2f2f2;
 }
 
 .pt__cta {
@@ -295,96 +325,76 @@
 }
 
 .pt__cta--acid:hover {
-  background: var(--black);
-  color: var(--white);
+  background: var(--white);
+  color: var(--black);
   border-color: var(--black);
 }
 
-/* ─── TIER BADGE (Month-to-Month, 6-Month Agreement, etc.) ── */
+/* ─── PRICING NOTES BAND ─────────────────────── */
 
-.pt__badge--tier {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  background: rgba(0,0,0,0.07);
-  color: rgba(0,0,0,0.5);
-  padding: 4px 10px;
-  margin-bottom: 6px;
-}
-
-.pt__growth .pt__badge--tier {
-  background: rgba(0,0,0,0.06);
-}
-
-/* ─── PLAN TAGLINE ────────────────────────────── */
-
-.pt__tagline {
-  font-size: 0.82rem;
-  font-style: italic;
-  font-weight: 400;
-  color: rgba(0,0,0,0.6);
-  line-height: 1.3;
-  margin-bottom: 4px;
-}
-
-/* ─── FEATURE SUB-CAPTION ─────────────────────── */
-
-.pt__sublabel {
-  display: block;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 400;
-  color: rgba(0,0,0,0.6);
-  letter-spacing: 0.03em;
-  text-transform: none;
-  line-height: 1.3;
-  margin-top: 3px;
-}
-
-/* ─── EXCLUSIVE ROW LABELS ────────────────────── */
-
-/* Bolder weight on rows where Lite has no feature */
-.pt__label--exclusive {
-  font-weight: 900;
-}
-
-/* Stack feature name + sub-caption vertically, right-aligned */
-.pt__label--sub {
+.pricing-notes-band {
+  margin-top: var(--space-5);
+  display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
+  gap: var(--space-4);
 }
 
-/* ─── RISK REVERSAL ───────────────────────────── */
-
-.pricing-risk {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-style: italic;
-  color: rgba(0,0,0,0.6);
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-top: var(--space-6);
-  margin-bottom: var(--space-4);
+.pricing-plan-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid rgba(0,0,0,0.18);
 }
 
-/* ─── DISCLAIMER ─────────────────────────────── */
+.pricing-plan-note {
+  padding: var(--space-5) var(--space-6);
+  border-right: 1px solid rgba(0,0,0,0.18);
+}
 
-.pricing-disclaimer {
+.pricing-plan-note:last-child {
+  border-right: none;
+}
+
+.pricing-plan-note__name {
+  font-family: var(--font-condensed);
+  font-weight: 900;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-1) 0;
+  color: var(--black);
+}
+
+.pricing-plan-note__term {
   font-family: var(--font-mono);
   font-size: 0.7rem;
-  color: #666;
-  letter-spacing: 0.08em;
-  margin-top: var(--space-6);
-  max-width: 72ch;
+  color: rgba(0,0,0,0.5);
+  letter-spacing: 0.02em;
+  margin: 0 0 var(--space-3) 0;
 }
 
+.pricing-plan-note__desc {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: rgba(0,0,0,0.74);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.pricing-table-note {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(0,0,0,0.74);
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+/* ─── ADD-ONS ────────────────────────────────── */
+
 .pricing-addons {
-  margin-top: var(--space-9);
-  padding-top: var(--space-7);
+  margin-top: var(--space-7);
+  padding-top: var(--space-6);
   border-top: 1px solid rgba(0,0,0,0.18);
 }
 
@@ -394,12 +404,14 @@
   margin-bottom: var(--space-6);
 }
 
-/* ─── ADD-ON CARD GRID ────────────────────────── */
-
 .addons-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-5);
+}
+
+.addon-card:last-child {
+  grid-column: 1 / -1;
 }
 
 .addon-card {
@@ -411,6 +423,9 @@
 }
 
 .addon-card__name {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
   font-family: var(--font-condensed);
   font-weight: 900;
   font-size: 1.4rem;
@@ -418,6 +433,14 @@
   letter-spacing: 0.03em;
   line-height: 1;
   color: var(--black);
+}
+
+.addon-card__name::before {
+  content: '';
+  width: 6px;
+  height: 1.15em;
+  background: var(--acid);
+  flex: 0 0 auto;
 }
 
 .addon-card__price {
@@ -440,6 +463,29 @@
   color: #444;
 }
 
+.addon-card__body {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.addon-card__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: var(--space-2);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.addon-card__note {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: rgba(0,0,0,0.6);
+  letter-spacing: 0.04em;
+}
+
 /* ─── MOBILE LABEL (hidden on desktop) ──────── */
 
 .pt__ml {
@@ -449,6 +495,10 @@
 /* ─── RESPONSIVE ─────────────────────────────── */
 
 @media (max-width: 700px) {
+
+  .pricing-plans__note {
+    white-space: normal;
+  }
 
   /* Switch to flex column, drop outer border */
   .pricing-table {
@@ -468,7 +518,7 @@
   .pt__pro     { order: 2; }
   .pt__lite    { order: 3; }
 
-  /* Left/right card borders */
+  /* Left/right card borders on all cells */
   .pt__growth,
   .pt__pro,
   .pt__lite {
@@ -480,7 +530,7 @@
 
   /* Top border on each card header */
   .pt__growth.pt__head {
-    border-top: 5px solid var(--acid);
+    box-shadow: inset 0 5px 0 var(--acid);
     border-bottom: 3px solid var(--black);
     flex-direction: column;
     align-items: flex-start;
@@ -508,19 +558,16 @@
     justify-content: stretch;
   }
 
-  /* Feature row dividers */
-  .pt__growth:not(.pt__head):not(.pt__cta-row),
+  /* Feature row dividers — inset so they stay inside the thick card borders */
+  .pt__growth:not(.pt__head):not(.pt__cta-row) {
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
+    padding: 12px 20px;
+  }
+
   .pt__pro:not(.pt__head):not(.pt__cta-row),
   .pt__lite:not(.pt__head):not(.pt__cta-row) {
     box-shadow: inset 0 -1px 0 rgba(0,0,0,0.1);
     padding: 12px 20px;
-    background: transparent;
-  }
-
-  /* Sub-captions inside mobile labels */
-  .pt__ml .pt__sublabel {
-    font-size: 0.68rem;
-    margin-top: 2px;
   }
 
   /* Show inline labels */
@@ -536,8 +583,31 @@
     flex: 1;
   }
 
+  .pt__ml .pt__sublabel {
+    font-size: 0.68rem;
+    margin-top: 2px;
+    text-align: left;
+  }
+
   /* Stack add-on cards to single column on mobile */
   .addons-grid {
     grid-template-columns: 1fr;
+  }
+
+  .addon-card:last-child {
+    grid-column: auto;
+  }
+
+  .pricing-plan-notes {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-plan-note {
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.18);
+  }
+
+  .pricing-plan-note:last-child {
+    border-bottom: none;
   }
 }

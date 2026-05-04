@@ -153,84 +153,6 @@
     }
   };
 
-  const initHeroCycle = () => {
-    const el = document.querySelector('.hero-cycle');
-    if (!el) return;
-
-    const words = ['Calls.', 'Jobs.', 'Leads.', 'Reviews.'];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let deleting = false;
-
-    const TYPE_SPEED   = 85;
-    const DELETE_SPEED = 50;
-    const PAUSE_FULL   = 2200;
-    const PAUSE_EMPTY  = 320;
-
-    const tick = () => {
-      const current = words[wordIndex];
-
-      if (deleting) {
-        charIndex--;
-        el.textContent = current.slice(0, charIndex);
-        if (charIndex === 0) {
-          deleting = false;
-          wordIndex = (wordIndex + 1) % words.length;
-          setTimeout(tick, PAUSE_EMPTY);
-        } else {
-          setTimeout(tick, DELETE_SPEED);
-        }
-      } else {
-        charIndex++;
-        el.textContent = current.slice(0, charIndex);
-        if (charIndex === current.length) {
-          deleting = true;
-          setTimeout(tick, PAUSE_FULL);
-        } else {
-          setTimeout(tick, TYPE_SPEED);
-        }
-      }
-    };
-
-    tick();
-  };
-
-  const initIltCarousel = () => {
-    const track = document.querySelector('.ilt__track');
-    if (!track) return;
-
-    const slides = Array.from(track.querySelectorAll('.ilt__slide'));
-    const dots = Array.from(document.querySelectorAll('.ilt__dot'));
-    const prevBtn = document.querySelector('.ilt__nav--prev');
-    const nextBtn = document.querySelector('.ilt__nav--next');
-    if (!slides.length) return;
-
-    let current = 0;
-
-    const goTo = (index) => {
-      slides[current].classList.remove('is-active');
-      dots[current]?.classList.remove('is-active');
-      dots[current]?.setAttribute('aria-selected', 'false');
-      current = (index + slides.length) % slides.length;
-      slides[current].classList.add('is-active');
-      dots[current]?.classList.add('is-active');
-      dots[current]?.setAttribute('aria-selected', 'true');
-    };
-
-    prevBtn?.addEventListener('click', () => goTo(current - 1));
-    nextBtn?.addEventListener('click', () => goTo(current + 1));
-    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-
-    let touchStartX = 0;
-    track.addEventListener('touchstart', (e) => {
-      touchStartX = e.touches[0].clientX;
-    }, { passive: true });
-    track.addEventListener('touchend', (e) => {
-      const delta = e.changedTouches[0].clientX - touchStartX;
-      if (Math.abs(delta) > 50) goTo(delta < 0 ? current + 1 : current - 1);
-    }, { passive: true });
-  };
-
   const run = () => {
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = String(new Date().getFullYear());
@@ -238,8 +160,6 @@
     initNav();
     initSmoothScroll();
     initFaq();
-    initHeroCycle();
-    initIltCarousel();
   };
 
   const ready = window.partialsReady instanceof Promise ? window.partialsReady : Promise.resolve();
