@@ -742,22 +742,18 @@ p.body,
 .hero-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-10);
   align-items: center;
-  padding-bottom: var(--space-10);
+}
+
+.hero-text-col {
+  padding: var(--space-10) var(--space-8) var(--space-10) max(var(--gutter), calc((100vw - var(--max-width)) / 2 + var(--gutter)));
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 460px;
-}
-
-@media (max-width: 960px) {
-  .hero-text {
-    min-height: 320px;
-  }
+  max-width: 560px;
 }
 
 .hero-label {
@@ -774,6 +770,14 @@ p.body,
   font-size: clamp(3rem, 5.5vw + 0.5rem, 6.5rem);
   line-height: 0.93;
   letter-spacing: -0.02em;
+  margin-bottom: var(--space-5);
+}
+
+.hero-body {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(0,0,0,0.7);
+  max-width: 42ch;
   margin-bottom: var(--space-7);
 }
 
@@ -870,9 +874,7 @@ p.body,
 .hero-media picture,
 .hero-media img {
   width: 100%;
-  height: 460px;
-  object-fit: cover;
-  border: var(--border);
+  height: auto;
   display: block;
 }
 
@@ -881,7 +883,6 @@ p.body,
 .hero-stats {
   background: var(--black);
   border-top: var(--border);
-  border-bottom: var(--border);
 }
 
 .hero-stats__inner {
@@ -1336,10 +1337,8 @@ p.body,
 }
 
 .reputation__media {
-  border: var(--border-white);
   overflow: hidden;
   flex-shrink: 0;
-  background: #1a1a1a;
 }
 
 .reputation__media img {
@@ -1857,12 +1856,10 @@ p.body,
 @media (max-width: 960px) {
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: var(--space-8);
   }
 
-  .hero-media picture,
-  .hero-media img {
-    height: 340px;
+  .hero-text-col {
+    padding: var(--space-8) var(--gutter);
   }
 
   .hero-stats__inner {
@@ -1928,5 +1925,72 @@ p.body,
 
   .hero-trades {
     gap: var(--space-2);
+  }
+}
+
+/* ── WHO THIS IS BUILT FOR ── */
+.built-for {
+  background: #2a2a2a;
+  padding: var(--space-11) 0 var(--space-10);
+}
+
+.built-for__intro h2 {
+  color: var(--white);
+}
+
+p.built-for__body {
+  color: var(--white);
+}
+
+.built-for-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.14);
+  border-left: 1px solid rgba(255,255,255,0.14);
+}
+
+.built-for-card {
+  padding: var(--space-7) var(--space-6);
+  border-right: 1px solid rgba(255,255,255,0.14);
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+.built-for-card__num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--acid);
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-3);
+}
+
+.built-for-card__name {
+  font-family: var(--font-condensed);
+  font-weight: 900;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+}
+
+.built-for-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.62);
+}
+
+@media (max-width: 900px) {
+  .built-for-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .built-for-grid {
+    grid-template-columns: 1fr;
   }
 }
