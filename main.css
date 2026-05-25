@@ -777,6 +777,31 @@ p.body,
   margin-bottom: var(--space-7);
 }
 
+.hero-last-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero-cycle {
+  display: inline-block;
+  min-width: 5ch;
+  vertical-align: baseline;
+}
+
+.hero-cursor {
+  display: inline-block;
+  min-width: 0.6ch;
+  color: var(--acid);
+  animation: cursor-blink 0.65s step-end infinite;
+  font-weight: 900;
+  vertical-align: baseline;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 /* Trade strip — horizontal pill list */
 .hero-trades {
   display: flex;
@@ -926,7 +951,7 @@ p.body,
 }
 
 .services {
-  background: var(--white);
+  background: #f5f5f5;
   padding: var(--space-11) 0;
   border-bottom: var(--border);
   position: relative;
@@ -945,46 +970,54 @@ p.body,
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-6);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-7);
 }
 
 .service-card {
   background: var(--white);
   border: 5px solid var(--black);
   padding: var(--space-8) var(--space-7);
+  padding-top: calc(52px + var(--space-7));
   position: relative;
   overflow: hidden;
 }
 
+.service-card__num {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #aaa;
+  letter-spacing: 0.08em;
+}
+
 .service-card__icon {
-  width: 36px;
-  height: 36px;
-  margin-bottom: var(--space-5);
-  color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 52px;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
   flex-shrink: 0;
 }
 
 .service-card__icon svg {
-  width: 36px;
-  height: 36px;
-  stroke: var(--black);
+  width: 28px;
+  height: 28px;
+  stroke: var(--acid);
 }
 
 .service-card h3 {
   font-size: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem);
   margin-bottom: var(--space-4);
   line-height: 1.05;
-  width: fit-content;
-  background: linear-gradient(var(--acid) 0%, var(--acid) 100%) no-repeat;
-  background-size: 0% 50%;
-  background-position: left 80%;
-  transition: background-size 0.42s cubic-bezier(0.16, 1, 0.3, 1);
-  padding-bottom: 2px;
-}
-
-.service-card:hover h3 {
-  background-size: 100% 50%;
 }
 
 .service-card p {
@@ -1858,6 +1891,12 @@ p.body,
   }
 }
 
+
+@media (max-width: 960px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 720px) {
   .services-grid {
