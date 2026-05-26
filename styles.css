@@ -239,16 +239,20 @@ p.body,
   border-color: var(--black);
 }
 
-/* Acid bg — used as the one accent CTA */
+/* Acid bg — press-down only, no color change */
 .btn.acid {
   background: var(--acid);
   color: var(--black);
   border-color: var(--black);
+  transition: transform 0.08s ease;
 }
 .btn.acid:hover,
-.btn.acid:focus-visible {
-  background: var(--black);
-  color: var(--white);
+.btn.acid:focus-visible,
+.btn.acid:active {
+  background: var(--acid);
+  color: var(--black);
+  border-color: var(--black);
+  transform: translateY(3px);
 }
 
 /* ─── MOBILE CTA BAR ─────────────────────────── */
@@ -334,29 +338,57 @@ p.body,
   }
 }
 
+/* ─── SITE CTA STRIP ─────────────────────────── */
+
+.site-cta {
+  background: var(--white);
+  border-top: var(--border);
+  padding: var(--space-8) 0;
+}
+
+.site-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+}
+
+.site-cta__heading {
+  flex: 1;
+  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  color: var(--black);
+  line-height: 1.15;
+  margin: 0;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.site-cta__actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--space-3);
+}
+
+
+@media (max-width: 700px) {
+  .site-cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* ─── FOOTER ─────────────────────────────────── */
 
 .site-footer {
-  position: relative;
   color: var(--white);
   border-top: var(--border);
-  background-image: url('/img/gear.jpg');
-  background-size: cover;
-  background-position: center 30%;
-}
-
-.site-footer::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.72);
-  z-index: 0;
+  background: var(--black);
 }
 
 .footer-top,
 .footer-bottom {
   position: relative;
-  z-index: 1;
 }
 
 .footer-top {

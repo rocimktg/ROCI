@@ -262,16 +262,20 @@ p.body,
   border-color: var(--black);
 }
 
-/* Acid bg — used as the one accent CTA */
+/* Acid bg — press-down only, no color change */
 .btn.acid {
   background: var(--acid);
   color: var(--black);
   border-color: var(--black);
+  transition: transform 0.08s ease;
 }
 .btn.acid:hover,
-.btn.acid:focus-visible {
-  background: var(--black);
-  color: var(--white);
+.btn.acid:focus-visible,
+.btn.acid:active {
+  background: var(--acid);
+  color: var(--black);
+  border-color: var(--black);
+  transform: translateY(3px);
 }
 
 /* ─── MOBILE CTA BAR ─────────────────────────── */
@@ -302,29 +306,56 @@ p.body,
   }
 }
 
+/* ─── SITE CTA STRIP ─────────────────────────── */
+
+.site-cta {
+  background: var(--white);
+  border-top: var(--border);
+  padding: var(--space-8) 0;
+}
+
+.site-cta__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-8);
+}
+
+.site-cta__heading {
+  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  color: var(--black);
+  line-height: 1.1;
+  margin: 0;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.site-cta__actions {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (max-width: 700px) {
+  .site-cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 /* ─── FOOTER ─────────────────────────────────── */
 
 .site-footer {
-  position: relative;
   color: var(--white);
   border-top: var(--border);
-  background-image: url('/img/gear.jpg');
-  background-size: cover;
-  background-position: center 30%;
-}
-
-.site-footer::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.72);
-  z-index: 0;
+  background: var(--black);
 }
 
 .footer-top,
 .footer-bottom {
   position: relative;
-  z-index: 1;
 }
 
 .footer-top {
@@ -873,7 +904,7 @@ p.body,
 
 .hero-media picture,
 .hero-media img {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: block;
 }
@@ -1614,7 +1645,8 @@ p.body,
   display: grid;
   grid-template-columns: 1fr 1.3fr;
   gap: var(--space-12);
-  align-items: center;
+  align-items: start;
+  margin-bottom: var(--space-10);
 }
 
 /* Photo block — raw, bordered, no clipping */
@@ -1693,30 +1725,51 @@ p.body,
   color: rgba(255,255,255,0.65);
   line-height: 1.65;
   max-width: 480px;
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-5);
 }
 
-/* Testimonial quote */
-.trust__quote {
-  border-left: 4px solid rgba(255,255,255,0.2);
-  padding-left: var(--space-6);
-  margin-bottom: var(--space-8);
+.trust__content p.body:last-child {
+  margin-bottom: 0;
 }
 
-.trust__quote-text {
+/* Proof cards */
+.trust__proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.14);
+  border-left: 1px solid rgba(255,255,255,0.14);
+}
+
+.trust__proof-card {
+  padding: var(--space-6) var(--space-7);
+  border-right: 1px solid rgba(255,255,255,0.14);
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+
+.trust__proof-card h3 {
+  font-family: var(--font-condensed);
+  font-weight: 900;
   font-size: 1rem;
-  color: rgba(255,255,255,0.8);
-  line-height: 1.7;
-  font-style: italic;
-  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: var(--space-3);
+  line-height: 1.1;
 }
 
-.trust__quote-name {
+.trust__proof-card p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.52);
+}
+
+.trust__footnote {
+  margin-top: var(--space-7);
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(255,255,255,0.6);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.38);
+  letter-spacing: 0.04em;
 }
 
 /* ─── PRICING TEASER ─────────────────────────── */
@@ -1885,6 +1938,10 @@ p.body,
 
   .trust__photo-frame img {
     max-height: 380px;
+  }
+
+  .trust__proof {
+    grid-template-columns: 1fr;
   }
 }
 
