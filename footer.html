@@ -9,8 +9,9 @@
 </section>
 
 <footer class="site-footer">
-  <div class="footer-top">
-    <div class="container footer-shell">
+
+  <div class="footer-body">
+    <div class="container footer-grid">
 
       <div class="footer-brand">
         <a class="nav__brand" href="index.html" aria-label="Rocinante Marketing home">
@@ -40,6 +41,7 @@
         <h2>Contact</h2>
         <ul class="footer-contact-list">
           <li><a href="tel:+18175184222">(817) 518-4222</a></li>
+          <li><a href="mailto:hello@rocinantemarketing.com">hello@rocinantemarketing.com</a></li>
           <li><a href="contact.html">Send a Message</a></li>
         </ul>
       </div>
@@ -47,14 +49,25 @@
     </div>
   </div>
 
-  <div class="footer-bottom">
-    <div class="container footer-bottom-bar">
-      <span>&copy; <span id="year">2026</span> Rocinante Marketing, LLC</span>
-      <div class="footer-legal">
-        <a href="privacy.html">Privacy Policy</a>
-      </div>
+  <div class="footer-legal">
+    <div class="container footer-legal__bar">
+      <span class="footer-legal__copy">&copy; <span id="year">2026</span> Rocinante Marketing, LLC</span>
+      <span class="footer-legal__sep" aria-hidden="true">/</span>
+      <a class="footer-legal__link" href="privacy.html">Privacy Policy</a>
+      <span class="footer-legal__sep" aria-hidden="true">/</span>
+      <a class="footer-legal__link" href="terms.html">Terms of Service</a>
     </div>
   </div>
+
 </footer>
 
-<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a1e0e7a7645b2ba9a634e91" data-source="WEB_USER"></script>
+<script>
+  if (!/\/contact(\.html)?$/.test(location.pathname)) {
+    var s = document.createElement('script');
+    s.src = 'https://widgets.leadconnectorhq.com/loader.js';
+    s.setAttribute('data-resources-url', 'https://widgets.leadconnectorhq.com/chat-widget/loader.js');
+    s.setAttribute('data-widget-id', '6a1e0e7a7645b2ba9a634e91');
+    s.setAttribute('data-source', 'WEB_USER');
+    document.body.appendChild(s);
+  }
+</script>

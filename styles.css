@@ -380,28 +380,26 @@ p.body,
 
 /* ─── FOOTER ─────────────────────────────────── */
 
+/* ─── FOOTER ─────────────────────────────────── */
+
 .site-footer {
   color: var(--white);
   border-top: var(--border);
   background: var(--black);
 }
 
-.footer-top,
-.footer-bottom {
-  position: relative;
-}
-
-.footer-top {
+/* ── Main columns ── */
+.footer-body {
   padding: var(--space-11) 0 var(--space-10);
 }
 
-.footer-shell {
+.footer-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr 1fr;
   gap: var(--space-11);
 }
 
-/* Footer brand lockup */
+/* Brand column */
 .footer-brand .nav__logo {
   width: 28px;
   height: 28px;
@@ -450,6 +448,7 @@ p.body,
   border-color: var(--acid);
 }
 
+/* Links column */
 .footer-links h2,
 .footer-contact h2 {
   font-family: var(--font-condensed);
@@ -468,19 +467,19 @@ p.body,
 }
 
 .footer-links-grid a {
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.7);
   font-family: var(--font-condensed);
   font-weight: 700;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 0.875rem;
+  color: rgba(255,255,255,0.7);
 }
 
 .footer-links-grid a:hover {
   color: var(--acid);
 }
 
+/* Contact column */
 .footer-contact-list {
   list-style: none;
   display: flex;
@@ -498,32 +497,39 @@ p.body,
   color: var(--acid);
 }
 
-.footer-bottom {
+/* ── Legal bar — completely isolated ── */
+.footer-legal {
   border-top: 1px solid rgba(255,255,255,0.12);
-  padding: var(--space-6) 0;
+  padding: var(--space-6) 0 80px;
 }
 
-.footer-bottom-bar {
+.footer-legal__bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-6);
+  gap: var(--space-2);
 }
 
-.footer-bottom-bar span,
-.footer-legal a {
-  font-family: var(--font-mono);
+.footer-legal__copy,
+.footer-legal__sep,
+.footer-legal__link {
+  font-family: 'Space Mono', monospace;
   font-size: 0.7rem;
-  color: rgba(255,255,255,0.55);
   letter-spacing: 0.05em;
+  text-decoration: none;
+  color: rgba(255,255,255,0.55);
 }
 
-.footer-legal a:hover {
-  color: rgba(255,255,255,0.6);
+.footer-legal__sep {
+  color: rgba(255,255,255,0.3);
 }
 
+.footer-legal__link:hover {
+  color: rgba(255,255,255,0.85);
+}
+
+/* ── Responsive ── */
 @media (max-width: 860px) {
-  .footer-shell {
+  .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-9);
   }
@@ -534,14 +540,12 @@ p.body,
 }
 
 @media (max-width: 560px) {
-  .footer-shell {
+  .footer-grid {
     grid-template-columns: 1fr;
     gap: var(--space-8);
   }
 
-  .footer-bottom-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-2);
+  .footer-legal__bar {
+    flex-wrap: wrap;
   }
 }
