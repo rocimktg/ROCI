@@ -1338,6 +1338,74 @@ p.body,
   }
 }
 
+/* ─── BUILT FROM YOUR BUSINESS ───────────────── */
+
+.built-from {
+  background: var(--white);
+}
+
+.built-from__layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-11);
+  align-items: center;
+}
+
+.built-from__text {
+  color: var(--black);
+}
+
+.built-from__body {
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  line-height: 1.65;
+  color: var(--black);
+  margin-top: var(--space-6);
+}
+
+.built-from__visual {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.built-from__img {
+  border-radius: 6px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  object-fit: cover;
+}
+
+.built-from__img--reviews {
+  width: 38%;
+  flex-shrink: 0;
+}
+
+.built-from__img--site {
+  width: 54%;
+  flex-shrink: 0;
+}
+
+.built-from__arrow {
+  flex-shrink: 0;
+  width: 48px;
+  color: var(--black);
+  opacity: 0.35;
+}
+
+@media (max-width: 860px) {
+  .built-from__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .built-from__img--reviews {
+    width: 35%;
+  }
+
+  .built-from__img--site {
+    width: 57%;
+  }
+}
+
 /* ─── REPUTATION ENGINE ──────────────────────── */
 
 .reputation {
@@ -1708,6 +1776,15 @@ p.body,
   font-size: 0.82rem;
   font-weight: 600;
   color: rgba(255,255,255,0.6);
+}
+
+.offer__founder-note {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+  margin-top: 20px;
+  border-left: 2px solid var(--acid);
+  padding-left: 14px;
 }
 
 /* Trust content */
