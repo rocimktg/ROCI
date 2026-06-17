@@ -270,6 +270,7 @@
   .process-step {
     border-right: none;
     border-bottom: 5px solid var(--black);
+    padding: var(--space-6) var(--space-5);
   }
 
   .process-step:last-child {
