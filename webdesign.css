@@ -358,7 +358,6 @@
 
 .about-process.about-process--dark .process-step h3 {
   color: var(--white);
-  background-image: linear-gradient(var(--acid) 0%, var(--acid) 100%);
 }
 
 .about-process.about-process--dark .process-step p {
