@@ -769,7 +769,7 @@ p.body,
 
 .hero {
   background: var(--white);
-  padding: var(--space-10) 0 0;
+  padding: var(--space-7) 0 0;
 }
 
 .hero-inner {
@@ -779,7 +779,7 @@ p.body,
 }
 
 .hero-text-col {
-  padding: var(--space-10) var(--space-8) var(--space-10) max(var(--gutter), calc((100vw - var(--max-width)) / 2 + var(--gutter)));
+  padding: var(--space-7) var(--space-8) var(--space-10) max(var(--gutter), calc((100vw - var(--max-width)) / 2 + var(--gutter)));
 }
 
 .hero-text {
